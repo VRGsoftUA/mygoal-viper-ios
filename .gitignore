@@ -1,0 +1,31 @@
+#osx noise
+.DS_Store
+
+#xcode noise
+*.pbxuser
+*.model
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+
+#build noise
+build/*
+build.output/*
+pkg/*
+cpd-output.*
+DerivedData
+
+#project user schemes etc.
+!*.xcodeproj/*.pbxproj
+!*.xcodeproj/xcshareddata
+
+*.xcworkspace/**
+!*.xcworkspace/*.xcworkspacedata
+
+Pods
+Podfile.lock
+.idea
+
+Modules/*/*.xcodeproj/**
+!Modules/*/*.xcodeproj/*.pbxproj
