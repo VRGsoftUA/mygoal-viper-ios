@@ -10,7 +10,6 @@ Swift 3.0 + CoreData using Viper architecture
 
 #### [HIRE US](http://vrgsoft.net/)
 #### Download 
-*  [Download App from here]()
-#### Contributing
+
 * Contributions are always welcome
 * If you want a feature and can code, feel free to fork and add the change yourself and make a pull request
