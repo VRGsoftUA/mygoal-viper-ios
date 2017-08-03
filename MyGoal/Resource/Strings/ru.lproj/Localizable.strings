@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  mygoal
+
+  Created by OLEKSANDR SEMENIUK on 7/18/17.
+  Copyright © 2017 VRG Soft. All rights reserved.
+*/
+
+"common_App_name" = "Get Habit";
+"common_Save" = "Сохранить";
+"common_Cancel" = "Отменить";
+"common_Yes" = "Да";
+"common_Delete" = "Удалить";
+"common_Notification_time" = "Время уведомений:";
+
+//Categories
+"category_Health_and_fitness" = "Здоровье и Фитнес";
+"category_Money" = "Деньги";
+"category_Self_improvement" = "Саморазвитие";
+"category_Sex_and_dating" = "Секс и свидания";
+"category_Work_and_study" = "Работа и учеба";
+"category_Arts" = "Искусcтво";
+"category_Social" = "Социальное";
+"category_Housekeeping" = "Домашнее хозяйство";
+"category_Other" = "Другое";
+
+//VC SMGoalListViewController
+"goals_list_title" = "Мои цели";
+
+//VC SMNewGoalViewController
+"create_goal_title" = "НОВАЯ ПРИВЫЧКА";
+"create_goal_tf_habit" = "Название привычки";
+"create_goal_tf_question" = "Вопрос (Сделали ли Вы ... сегодня ?)";
+
+//VC SMQuestionViewController
+"check_goal_title" = "Отметить достижение";
+
+//ALERTS
+"alert_miss_title" = "К сожалению, Вы пропустили день";
+"alert_miss_body" = "Привычка формируется за 21 день и то, что ранее требовало усилий, становится уже легким и знакомым. Только ежедненое выполнени создаст крепкую привычку. Создать новую цель Вы можете нажав на кнопку ниже.";
+"alert_action" = "Создать новую привычку";
+"alert_final_title" = "Поздравляем, у Вас новая привычка";
+"alert_final_body" = "Помните, что вам нужно создавать хорошие привычки: в первую очередь для себя, а во-вторых - для других, на которые вы можете влиять.";
+"alert_title_error" = "Ошибка";
+"alert_empty_habit_name" = "Пожалуйста, введите название привычки";
+
+//Push
+"push_title" = "Отметьте достижение";

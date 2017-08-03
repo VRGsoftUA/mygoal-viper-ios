@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  mygoal
+
+  Created by OLEKSANDR SEMENIUK on 7/18/17.
+  Copyright © 2017 VRG Soft. All rights reserved.
+*/
+
+"common_App_name" = "Get Habit";
+"common_Save" = "Зберегти";
+"common_Cancel" = "Cкасувати";
+"common_Yes" = "Так";
+"common_Delete" = "Видалити";
+"common_Notification_time" = "Час оповіщення:";
+
+//Categories
+"category_Health_and_fitness" = "Здоров\'я і фітнес";
+"category_Money" = "Гроші";
+"category_Self_improvement" = "Саморозвиток";
+"category_Sex_and_dating" = "Секс і побачення";
+"category_Work_and_study" = "Робота і навчання";
+"category_Arts" = "Мистецтво";
+"category_Social" = "Соціальне";
+"category_Housekeeping" = "Домогосподарство";
+"category_Other" = "Інше";
+
+//VC SMGoalListViewController
+"goals_list_title" = "Мої цілі";
+
+//VC SMNewGoalViewController
+"create_goal_title" = "НОВА ЗВИЧКА";
+"create_goal_tf_habit" = "Назва звички";
+"create_goal_tf_question" = "Питання (Чи ...сьогодні?";
+
+//VC SMQuestionViewController
+"check_goal_title" = "Відзначити досягнення";
+
+//ALERTS
+"alert_miss_title" = "На жаль, Ви пропустили день";
+"alert_miss_body" = "Звичка формується за 21 день і те що раніше викликало труднощі, стає легким та знайомим. Тільки щоденне виконання формує сильну звичку. Сворити нову ціль Ви можете натиснувши на кнопку нижче.";
+"alert_action" = "Створити нову звичку";
+"alert_final_title" = "Вітаємо, у Вас нова звичка";
+"alert_final_body" = "Пам\'ятайте, що потрібно створювати тільки хороші звички: перш за все для себе, потім - для інших людей, на яких Ви можете впливати.";
+"alert_title_error" = "Помилка";
+"alert_empty_habit_name" = "Будь ласка, введіть назву звички";
+
+//Push
+"push_title" = "Відзначте досягнення";

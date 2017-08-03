@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  mygoal
+
+  Created by OLEKSANDR SEMENIUK on 7/18/17.
+  Copyright © 2017 VRG Soft. All rights reserved.
+*/
+
+"common_App_name" = "Get Habit";
+"common_Save" = "Save";
+"common_Cancel" = "Cancel";
+"common_Yes" = "Yes";
+"common_Delete" = "Delete";
+"common_Notification_time" = "Notification time:";
+
+//Categories
+"category_Health_and_fitness" = "Health and Fitness";
+"category_Money" = "Money";
+"category_Self_improvement" = "Self Improvement";
+"category_Sex_and_dating" = "Sex and dating";
+"category_Work_and_study" = "Work and Study";
+"category_Arts" = "Arts";
+"category_Social" = "Social";
+"category_Housekeeping" = "Housekeeping";
+"category_Other" = "Other";
+
+//VC SMGoalListViewController
+"goals_list_title" = "My Goals";
+
+//VC SMNewGoalViewController
+"create_goal_title" = "NEW HABIT";
+"create_goal_tf_habit" = "Habit name";
+"create_goal_tf_question" = "Question (Did you...today?)";
+
+//VC SMQuestionViewController
+"check_goal_title" = "CHECK YOUR HABIT";
+
+//ALERTS
+"alert_miss_title" = "Unfortunately, you missed the day";
+"alert_miss_body" = "The habit is formed on day 21, and what previously required the effort becomes already easy and familiar. Only daily performance will create a strong habit.  Create a new habit by clicking on the button below";
+"alert_action" = "Create a new habit";
+"alert_final_title" = "Congratulations on your new habit";
+"alert_final_body" = "Remember that you need to create good habits: first of all to yourself, and secondly - to others, on which you can influence.";
+"alert_title_error" = "Error";
+"alert_empty_habit_name" = "Please, enter habit name";
+
+//Push
+"push_title" = "Match your goal";

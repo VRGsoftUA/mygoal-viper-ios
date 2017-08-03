@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  mygoal
+
+  Created by OLEKSANDR SEMENIUK on 7/18/17.
+  Copyright © 2017 VRG Soft. All rights reserved.
+*/
+
+"common_App_name" = "Get Habit";
+"common_Save" = "Salvare";
+"common_Cancel" = "Cancellare";
+"common_Yes" = "Si";
+"common_Delete" = "rimuovere";
+"common_Notification_time" = "Tempo di notifica:";
+
+//Categories
+"category_Health_and_fitness" = "Salute e fitness";
+"category_Money" = "I soldi";
+"category_Self_improvement" = "Auto-miglioramento";
+"category_Sex_and_dating" = "Sesso e incontri";
+"category_Work_and_study" = "Lavoro e studio";
+"category_Arts" = "Arts";
+"category_Social" = "Sociale";
+"category_Housekeeping" = "Faccende domestiche";
+"category_Other" = "Altre";
+
+//VC SMGoalListViewController
+"goals_list_title" = "I miei obiettivi";
+
+//VC SMNewGoalViewController
+"create_goal_title" = "NUOVA ABITUDINE";
+"create_goal_tf_habit" = "Nome di abitudine";
+"create_goal_tf_question" = "Domanda (hai fatto ... oggi?)";
+
+//VC SMQuestionViewController
+"check_goal_title" = "Verificare abitudine";
+
+//ALERTS
+"alert_miss_title" = "Purtroppo, tu sei perso il giorno";
+"alert_miss_body" = "L\'abitudine è formata in 21 giorno ,e che richiesto  sforzi  in precedenza diventa facile e familiare. Solo performance giornaliera esecuzione creerà un\'abitudine forte. Creare un nuovo obiettivo è possibile per  fare un clic sul pulsante sotto.";
+"alert_action" = "Creare una nuova abitudine";
+"alert_final_title" = "Complimenti per la tua nuova abitudine";
+"alert_final_body" = "Ricordate che è necessario creare buone abitudini: prima di tutto a se stessi, e in secondo luogo - per gli altri, su cui si può influenzare.";
+"alert_title_error" = "Errore";
+"alert_empty_habit_name" = "Si prega di inserire il nome del abitudine";
+
+//Push
+"push_title" = "Segnare il abitudine";
