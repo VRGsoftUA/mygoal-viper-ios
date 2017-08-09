@@ -48,6 +48,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ0-MR-DTl" userLabel="btSave">
                                             <rect key="frame" x="130.66666666666669" y="238" width="103.00000000000003" height="49"/>
                                             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration" label="Yes"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                             <inset key="contentEdgeInsets" minX="40" minY="15" maxX="40" maxY="15"/>
                                             <state key="normal" title="ДА">
@@ -68,6 +69,7 @@
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bnu-kk-dKT" userLabel="tfTime">
                                                     <rect key="frame" x="148" y="0.0" width="49" height="16.999999999999986"/>
+                                                    <accessibility key="accessibilityConfiguration" label="Push time"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="49" id="KSr-He-uFh"/>
                                                     </constraints>

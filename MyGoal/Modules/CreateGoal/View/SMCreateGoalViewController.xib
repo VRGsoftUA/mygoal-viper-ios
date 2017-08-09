@@ -46,6 +46,7 @@
                                     <subviews>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPr-Ky-vhL" userLabel="tfHabit" customClass="SMFloatingTextField" customModule="MyGoal" customModuleProvider="target">
                                             <rect key="frame" x="20" y="90" width="324" height="50"/>
+                                            <accessibility key="accessibilityConfiguration" label="Habit name"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="LA3-lr-vMY"/>
                                             </constraints>
@@ -55,6 +56,7 @@
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xnx-48-fwm" userLabel="tfQuestion" customClass="SMFloatingTextField" customModule="MyGoal" customModuleProvider="target">
                                             <rect key="frame" x="20" y="180" width="324" height="50"/>
+                                            <accessibility key="accessibilityConfiguration" label="Habit question"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="zuT-zA-RUi"/>
                                             </constraints>
@@ -65,6 +67,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGb-BO-LfV" userLabel="btSave">
                                             <rect key="frame" x="57" y="479" width="110" height="49"/>
                                             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration" label="Save"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                             <inset key="contentEdgeInsets" minX="5" minY="15" maxX="5" maxY="15"/>
                                             <state key="normal" title="СОХРАНИТЬ">
@@ -75,13 +78,13 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время уведомлений:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-sJ-CGg" userLabel="lbNotification">
-                                            <rect key="frame" x="160.33333333333337" y="270" width="139.66666666666663" height="16.666666666666686"/>
+                                            <rect key="frame" x="162.33333333333337" y="270" width="137.66666666666663" height="16.666666666666686"/>
                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dD7-Ry-rfS" userLabel="swNotifications">
-                                            <rect key="frame" x="98.333333333333343" y="263" width="51.000000000000028" height="31"/>
+                                            <rect key="frame" x="100.33333333333334" y="263" width="51.000000000000028" height="31"/>
                                             <color key="onTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="didNotificationTurnOff:" destination="-1" eventType="valueChanged" id="EgW-ET-5fX"/>
@@ -99,6 +102,7 @@
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icL-vL-vvY" userLabel="btCancel">
                                             <rect key="frame" x="197" y="479" width="110" height="49"/>
                                             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration" label="Cancel"/>
                                             <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
                                             <inset key="contentEdgeInsets" minX="5" minY="15" maxX="5" maxY="15"/>
                                             <state key="normal" title="ОТМЕНА">
@@ -138,6 +142,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiq-gy-pJQ" userLabel="btCategory">
                                     <rect key="frame" x="10" y="40" width="70" height="70"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <accessibility key="accessibilityConfiguration" label="Choose category"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="70" id="IcY-53-JjT"/>
                                         <constraint firstAttribute="height" constant="70" id="hPP-sr-6ze"/>

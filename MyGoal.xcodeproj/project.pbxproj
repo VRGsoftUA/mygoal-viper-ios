@@ -59,6 +59,7 @@
 		B7211C091F274801000CFFEB /* SMUIConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211C081F274801000CFFEB /* SMUIConfigurator.swift */; };
 		B7211C111F2748E1000CFFEB /* SMBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211C101F2748E1000CFFEB /* SMBaseViewController.swift */; };
 		B7211C131F274902000CFFEB /* SMBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211C121F274902000CFFEB /* SMBaseNavigationController.swift */; };
+		B751B8041F3B3D2300E487C4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7211BAC1F274774000CFFEB /* Localizable.strings */; };
 		B78DB2FD1F2889E60018D12C /* SMCreateGoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BB1F2889E60018D12C /* SMCreateGoalInteractor.swift */; };
 		B78DB2FE1F2889E60018D12C /* SMCreateGoalInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BC1F2889E60018D12C /* SMCreateGoalInteractorInput.swift */; };
 		B78DB2FF1F2889E60018D12C /* SMCreateGoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BD1F2889E60018D12C /* SMCreateGoalInteractorOutput.swift */; };
@@ -973,6 +974,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B751B8041F3B3D2300E487C4 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

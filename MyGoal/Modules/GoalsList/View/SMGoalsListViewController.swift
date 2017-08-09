@@ -25,6 +25,7 @@ class SMGoalsListViewController: SMBaseViewController {
         
         let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didBtCreateGoalClicked))
         button.tintColor = UIColor.darkGray
+        button.accessibilityLabel = "Add"
         navigationItem.rightBarButtonItem = button
         
         displayManager.configureFor(tableView: tableView, baseDelegate: self)
