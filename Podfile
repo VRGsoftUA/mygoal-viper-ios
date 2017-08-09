@@ -1,24 +1,22 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+# platform :ios, '10.0'
 
 target 'MyGoal' do
-use_frameworks!
-
-    pod 'Alamofire'
-    pod 'AlamofireImage'
-    pod 'SwiftyJSON'
-    pod 'MulticastDelegateSwift'
-
-  # Pods for MyGoal
-
-  target 'MyGoalTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'MyGoalUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+    use_frameworks!
+    
+    pod 'VRGSoftSwiftIOSKit', :git => "https://github.com/VRGsoftUA/VRGSoftSwiftIOSKit.git", :branch => "development"
+    
+    
+    # Pods for MyGoal
+    
+    target 'MyGoalTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+    target 'MyGoalUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
 end

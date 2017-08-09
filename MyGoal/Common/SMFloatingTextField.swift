@@ -6,6 +6,7 @@
 //  Copyright © 2017 VRG Soft. All rights reserved.
 //
 import UIKit
+import VRGSoftSwiftIOSKit
 
 class SMFloatingTextField: SMTextField {
     

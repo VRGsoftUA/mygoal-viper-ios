@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VRGSoftSwiftIOSKit
 
 class SMBaseViewController: SMViewController {
     

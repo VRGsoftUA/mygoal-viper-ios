@@ -43,54 +43,6 @@
 		B7211BC11F274774000CFFEB /* OrangeClearStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B311F274774000CFFEB /* OrangeClearStyle.swift */; };
 		B7211BC21F274774000CFFEB /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B331F274774000CFFEB /* ColorUtil.swift */; };
 		B7211BC31F274774000CFFEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7211B341F274774000CFFEB /* Assets.xcassets */; };
-		B7211BC51F274774000CFFEB /* SMActivityAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B3A1F274774000CFFEB /* SMActivityAdapter.swift */; };
-		B7211BC61F274774000CFFEB /* SMActivityPKHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B3B1F274774000CFFEB /* SMActivityPKHUD.swift */; };
-		B7211BC71F274774000CFFEB /* SMNativePullToRefreshAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B3C1F274774000CFFEB /* SMNativePullToRefreshAdapter.swift */; };
-		B7211BC81F274774000CFFEB /* SMPullToRefreshAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B3D1F274774000CFFEB /* SMPullToRefreshAdapter.swift */; };
-		B7211BC91F274774000CFFEB /* SMAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B3F1F274774000CFFEB /* SMAlertController.swift */; };
-		B7211BCA1F274774000CFFEB /* SMPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B411F274774000CFFEB /* SMPair.swift */; };
-		B7211BCB1F274774000CFFEB /* SMTargetAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B421F274774000CFFEB /* SMTargetAction.swift */; };
-		B7211BCC1F274774000CFFEB /* SMTitledID.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B431F274774000CFFEB /* SMTitledID.swift */; };
-		B7211BCD1F274774000CFFEB /* SMLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B451F274774000CFFEB /* SMLabel.swift */; };
-		B7211BCE1F274774000CFFEB /* SMTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B461F274774000CFFEB /* SMTextField.swift */; };
-		B7211BCF1F274774000CFFEB /* SMTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B471F274774000CFFEB /* SMTextView.swift */; };
-		B7211BD01F274774000CFFEB /* SMStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B491F274774000CFFEB /* SMStorage.swift */; };
-		B7211BD11F274774000CFFEB /* SMDataFetcherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B4B1F274774000CFFEB /* SMDataFetcherProtocol.swift */; };
-		B7211BD21F274774000CFFEB /* SMFetcherIntoStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B4C1F274774000CFFEB /* SMFetcherIntoStorage.swift */; };
-		B7211BD31F274774000CFFEB /* SMFetcherMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B4D1F274774000CFFEB /* SMFetcherMessage.swift */; };
-		B7211BD41F274774000CFFEB /* SMFetcherWithBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B4E1F274774000CFFEB /* SMFetcherWithBlock.swift */; };
-		B7211BD51F274774000CFFEB /* SMFetcherWithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B4F1F274774000CFFEB /* SMFetcherWithRequest.swift */; };
-		B7211BD61F274774000CFFEB /* SMFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B511F274774000CFFEB /* SMFormatter.swift */; };
-		B7211BD71F274774000CFFEB /* SMGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B531F274774000CFFEB /* SMGateway.swift */; };
-		B7211BD81F274774000CFFEB /* SMGatewayConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B541F274774000CFFEB /* SMGatewayConfigurator.swift */; };
-		B7211BD91F274774000CFFEB /* SMGatewayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B551F274774000CFFEB /* SMGatewayRequest.swift */; };
-		B7211BDA1F274774000CFFEB /* SMColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B571F274774000CFFEB /* SMColor.swift */; };
-		B7211BDB1F274774000CFFEB /* UIButton+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B581F274774000CFFEB /* UIButton+Help.swift */; };
-		B7211BDC1F274774000CFFEB /* UIImage+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B591F274774000CFFEB /* UIImage+Help.swift */; };
-		B7211BDD1F274774000CFFEB /* UIImageView+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B5A1F274774000CFFEB /* UIImageView+Help.swift */; };
-		B7211BDE1F274774000CFFEB /* UILabel+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B5B1F274774000CFFEB /* UILabel+Help.swift */; };
-		B7211BDF1F274774000CFFEB /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B5C1F274774000CFFEB /* UIView+Animation.swift */; };
-		B7211BE01F274774000CFFEB /* UIView+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B5D1F274774000CFFEB /* UIView+Help.swift */; };
-		B7211BE11F274774000CFFEB /* UIView+PSSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B5E1F274774000CFFEB /* UIView+PSSizes.swift */; };
-		B7211BE21F274774000CFFEB /* SMModuleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B601F274774000CFFEB /* SMModuleList.swift */; };
-		B7211BE31F274774000CFFEB /* SMModuleListPaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B611F274774000CFFEB /* SMModuleListPaging.swift */; };
-		B7211BE41F274774000CFFEB /* SMModuleRemotePushes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B621F274774000CFFEB /* SMModuleRemotePushes.swift */; };
-		B7211BE51F274774000CFFEB /* SMDataBaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B641F274774000CFFEB /* SMDataBaseRequest.swift */; };
-		B7211BE61F274774000CFFEB /* SMRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B651F274774000CFFEB /* SMRequest.swift */; };
-		B7211BE71F274774000CFFEB /* SMResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B671F274774000CFFEB /* SMResponse.swift */; };
-		B7211BE81F274774000CFFEB /* SMCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B6B1F274774000CFFEB /* SMCellData.swift */; };
-		B7211BE91F274774000CFFEB /* SMCellDataMaped.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B6C1F274774000CFFEB /* SMCellDataMaped.swift */; };
-		B7211BEA1F274774000CFFEB /* SMCellDataModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B6D1F274774000CFFEB /* SMCellDataModeled.swift */; };
-		B7211BEB1F274774000CFFEB /* SMCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B6E1F274774000CFFEB /* SMCellProtocol.swift */; };
-		B7211BEC1F274774000CFFEB /* SMCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B711F274774000CFFEB /* SMCell.swift */; };
-		B7211BED1F274774000CFFEB /* SMSectionReadonly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B731F274774000CFFEB /* SMSectionReadonly.swift */; };
-		B7211BEE1F274774000CFFEB /* SMSectionWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B741F274774000CFFEB /* SMSectionWritable.swift */; };
-		B7211BEF1F274774000CFFEB /* SMTableDisposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B761F274774000CFFEB /* SMTableDisposer.swift */; };
-		B7211BF01F274774000CFFEB /* SMTableDisposerModeled.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B771F274774000CFFEB /* SMTableDisposerModeled.swift */; };
-		B7211BF11F274774000CFFEB /* SMValidationGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B791F274774000CFFEB /* SMValidationGroup.swift */; };
-		B7211BF21F274774000CFFEB /* SMValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B7A1F274774000CFFEB /* SMValidator.swift */; };
-		B7211BF31F274774000CFFEB /* SMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B7C1F274774000CFFEB /* SMViewController.swift */; };
-		B7211BF41F274774000CFFEB /* UIViewController+Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B7D1F274774000CFFEB /* UIViewController+Help.swift */; };
 		B7211BF51F274774000CFFEB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7211B7F1F274774000CFFEB /* DataModel.xcdatamodeld */; };
 		B7211BF61F274774000CFFEB /* _SMBOGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B831F274774000CFFEB /* _SMBOGoal.swift */; };
 		B7211BF71F274774000CFFEB /* SMBOGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B841F274774000CFFEB /* SMBOGoal.swift */; };
@@ -222,54 +174,6 @@
 		B7211B311F274774000CFFEB /* OrangeClearStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrangeClearStyle.swift; sourceTree = "<group>"; };
 		B7211B331F274774000CFFEB /* ColorUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 		B7211B341F274774000CFFEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B7211B3A1F274774000CFFEB /* SMActivityAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMActivityAdapter.swift; sourceTree = "<group>"; };
-		B7211B3B1F274774000CFFEB /* SMActivityPKHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMActivityPKHUD.swift; sourceTree = "<group>"; };
-		B7211B3C1F274774000CFFEB /* SMNativePullToRefreshAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMNativePullToRefreshAdapter.swift; sourceTree = "<group>"; };
-		B7211B3D1F274774000CFFEB /* SMPullToRefreshAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPullToRefreshAdapter.swift; sourceTree = "<group>"; };
-		B7211B3F1F274774000CFFEB /* SMAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMAlertController.swift; sourceTree = "<group>"; };
-		B7211B411F274774000CFFEB /* SMPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMPair.swift; sourceTree = "<group>"; };
-		B7211B421F274774000CFFEB /* SMTargetAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTargetAction.swift; sourceTree = "<group>"; };
-		B7211B431F274774000CFFEB /* SMTitledID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTitledID.swift; sourceTree = "<group>"; };
-		B7211B451F274774000CFFEB /* SMLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMLabel.swift; sourceTree = "<group>"; };
-		B7211B461F274774000CFFEB /* SMTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTextField.swift; sourceTree = "<group>"; };
-		B7211B471F274774000CFFEB /* SMTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTextView.swift; sourceTree = "<group>"; };
-		B7211B491F274774000CFFEB /* SMStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMStorage.swift; sourceTree = "<group>"; };
-		B7211B4B1F274774000CFFEB /* SMDataFetcherProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMDataFetcherProtocol.swift; sourceTree = "<group>"; };
-		B7211B4C1F274774000CFFEB /* SMFetcherIntoStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMFetcherIntoStorage.swift; sourceTree = "<group>"; };
-		B7211B4D1F274774000CFFEB /* SMFetcherMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMFetcherMessage.swift; sourceTree = "<group>"; };
-		B7211B4E1F274774000CFFEB /* SMFetcherWithBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMFetcherWithBlock.swift; sourceTree = "<group>"; };
-		B7211B4F1F274774000CFFEB /* SMFetcherWithRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMFetcherWithRequest.swift; sourceTree = "<group>"; };
-		B7211B511F274774000CFFEB /* SMFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMFormatter.swift; sourceTree = "<group>"; };
-		B7211B531F274774000CFFEB /* SMGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGateway.swift; sourceTree = "<group>"; };
-		B7211B541F274774000CFFEB /* SMGatewayConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGatewayConfigurator.swift; sourceTree = "<group>"; };
-		B7211B551F274774000CFFEB /* SMGatewayRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGatewayRequest.swift; sourceTree = "<group>"; };
-		B7211B571F274774000CFFEB /* SMColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMColor.swift; sourceTree = "<group>"; };
-		B7211B581F274774000CFFEB /* UIButton+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Help.swift"; sourceTree = "<group>"; };
-		B7211B591F274774000CFFEB /* UIImage+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Help.swift"; sourceTree = "<group>"; };
-		B7211B5A1F274774000CFFEB /* UIImageView+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Help.swift"; sourceTree = "<group>"; };
-		B7211B5B1F274774000CFFEB /* UILabel+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Help.swift"; sourceTree = "<group>"; };
-		B7211B5C1F274774000CFFEB /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
-		B7211B5D1F274774000CFFEB /* UIView+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Help.swift"; sourceTree = "<group>"; };
-		B7211B5E1F274774000CFFEB /* UIView+PSSizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+PSSizes.swift"; sourceTree = "<group>"; };
-		B7211B601F274774000CFFEB /* SMModuleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMModuleList.swift; sourceTree = "<group>"; };
-		B7211B611F274774000CFFEB /* SMModuleListPaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMModuleListPaging.swift; sourceTree = "<group>"; };
-		B7211B621F274774000CFFEB /* SMModuleRemotePushes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMModuleRemotePushes.swift; sourceTree = "<group>"; };
-		B7211B641F274774000CFFEB /* SMDataBaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMDataBaseRequest.swift; sourceTree = "<group>"; };
-		B7211B651F274774000CFFEB /* SMRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMRequest.swift; sourceTree = "<group>"; };
-		B7211B671F274774000CFFEB /* SMResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMResponse.swift; sourceTree = "<group>"; };
-		B7211B6B1F274774000CFFEB /* SMCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCellData.swift; sourceTree = "<group>"; };
-		B7211B6C1F274774000CFFEB /* SMCellDataMaped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCellDataMaped.swift; sourceTree = "<group>"; };
-		B7211B6D1F274774000CFFEB /* SMCellDataModeled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCellDataModeled.swift; sourceTree = "<group>"; };
-		B7211B6E1F274774000CFFEB /* SMCellProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCellProtocol.swift; sourceTree = "<group>"; };
-		B7211B711F274774000CFFEB /* SMCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCell.swift; sourceTree = "<group>"; };
-		B7211B731F274774000CFFEB /* SMSectionReadonly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSectionReadonly.swift; sourceTree = "<group>"; };
-		B7211B741F274774000CFFEB /* SMSectionWritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSectionWritable.swift; sourceTree = "<group>"; };
-		B7211B761F274774000CFFEB /* SMTableDisposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTableDisposer.swift; sourceTree = "<group>"; };
-		B7211B771F274774000CFFEB /* SMTableDisposerModeled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMTableDisposerModeled.swift; sourceTree = "<group>"; };
-		B7211B791F274774000CFFEB /* SMValidationGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMValidationGroup.swift; sourceTree = "<group>"; };
-		B7211B7A1F274774000CFFEB /* SMValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMValidator.swift; sourceTree = "<group>"; };
-		B7211B7C1F274774000CFFEB /* SMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMViewController.swift; sourceTree = "<group>"; };
-		B7211B7D1F274774000CFFEB /* UIViewController+Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Help.swift"; sourceTree = "<group>"; };
 		B7211B801F274774000CFFEB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		B7211B831F274774000CFFEB /* _SMBOGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _SMBOGoal.swift; sourceTree = "<group>"; };
 		B7211B841F274774000CFFEB /* SMBOGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBOGoal.swift; sourceTree = "<group>"; };
@@ -444,7 +348,6 @@
 				B7211C071F274801000CFFEB /* Common */,
 				B7211BB11F274774000CFFEB /* Services */,
 				B7211B8A1F274774000CFFEB /* Modules */,
-				B7211B381F274774000CFFEB /* Core */,
 				B7211B201F274774000CFFEB /* 3Part */,
 				B7211BA31F274774000CFFEB /* Resource */,
 				B7211B891F274774000CFFEB /* Info.plist */,
@@ -549,229 +452,6 @@
 			children = (
 			);
 			path = Base.lproj;
-			sourceTree = "<group>";
-		};
-		B7211B381F274774000CFFEB /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B391F274774000CFFEB /* Activities */,
-				B7211B3E1F274774000CFFEB /* AlertController */,
-				B7211B401F274774000CFFEB /* Base */,
-				B7211B441F274774000CFFEB /* Controls */,
-				B7211B481F274774000CFFEB /* CoreData */,
-				B7211B4A1F274774000CFFEB /* Fetcher */,
-				B7211B501F274774000CFFEB /* Formatter */,
-				B7211B521F274774000CFFEB /* Gateway */,
-				B7211B561F274774000CFFEB /* Help */,
-				B7211B5F1F274774000CFFEB /* Modules */,
-				B7211B631F274774000CFFEB /* Request */,
-				B7211B661F274774000CFFEB /* Response */,
-				B7211B681F274774000CFFEB /* TableDisposer */,
-				B7211B781F274774000CFFEB /* Validators */,
-				B7211B7B1F274774000CFFEB /* Vc */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		B7211B391F274774000CFFEB /* Activities */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B3A1F274774000CFFEB /* SMActivityAdapter.swift */,
-				B7211B3B1F274774000CFFEB /* SMActivityPKHUD.swift */,
-				B7211B3C1F274774000CFFEB /* SMNativePullToRefreshAdapter.swift */,
-				B7211B3D1F274774000CFFEB /* SMPullToRefreshAdapter.swift */,
-			);
-			path = Activities;
-			sourceTree = "<group>";
-		};
-		B7211B3E1F274774000CFFEB /* AlertController */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B3F1F274774000CFFEB /* SMAlertController.swift */,
-			);
-			path = AlertController;
-			sourceTree = "<group>";
-		};
-		B7211B401F274774000CFFEB /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B411F274774000CFFEB /* SMPair.swift */,
-				B7211B421F274774000CFFEB /* SMTargetAction.swift */,
-				B7211B431F274774000CFFEB /* SMTitledID.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		B7211B441F274774000CFFEB /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B451F274774000CFFEB /* SMLabel.swift */,
-				B7211B461F274774000CFFEB /* SMTextField.swift */,
-				B7211B471F274774000CFFEB /* SMTextView.swift */,
-			);
-			path = Controls;
-			sourceTree = "<group>";
-		};
-		B7211B481F274774000CFFEB /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B491F274774000CFFEB /* SMStorage.swift */,
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
-		B7211B4A1F274774000CFFEB /* Fetcher */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B4B1F274774000CFFEB /* SMDataFetcherProtocol.swift */,
-				B7211B4C1F274774000CFFEB /* SMFetcherIntoStorage.swift */,
-				B7211B4D1F274774000CFFEB /* SMFetcherMessage.swift */,
-				B7211B4E1F274774000CFFEB /* SMFetcherWithBlock.swift */,
-				B7211B4F1F274774000CFFEB /* SMFetcherWithRequest.swift */,
-			);
-			path = Fetcher;
-			sourceTree = "<group>";
-		};
-		B7211B501F274774000CFFEB /* Formatter */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B511F274774000CFFEB /* SMFormatter.swift */,
-			);
-			path = Formatter;
-			sourceTree = "<group>";
-		};
-		B7211B521F274774000CFFEB /* Gateway */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B531F274774000CFFEB /* SMGateway.swift */,
-				B7211B541F274774000CFFEB /* SMGatewayConfigurator.swift */,
-				B7211B551F274774000CFFEB /* SMGatewayRequest.swift */,
-			);
-			path = Gateway;
-			sourceTree = "<group>";
-		};
-		B7211B561F274774000CFFEB /* Help */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B571F274774000CFFEB /* SMColor.swift */,
-				B7211B581F274774000CFFEB /* UIButton+Help.swift */,
-				B7211B591F274774000CFFEB /* UIImage+Help.swift */,
-				B7211B5A1F274774000CFFEB /* UIImageView+Help.swift */,
-				B7211B5B1F274774000CFFEB /* UILabel+Help.swift */,
-				B7211B5C1F274774000CFFEB /* UIView+Animation.swift */,
-				B7211B5D1F274774000CFFEB /* UIView+Help.swift */,
-				B7211B5E1F274774000CFFEB /* UIView+PSSizes.swift */,
-			);
-			path = Help;
-			sourceTree = "<group>";
-		};
-		B7211B5F1F274774000CFFEB /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B601F274774000CFFEB /* SMModuleList.swift */,
-				B7211B611F274774000CFFEB /* SMModuleListPaging.swift */,
-				B7211B621F274774000CFFEB /* SMModuleRemotePushes.swift */,
-			);
-			path = Modules;
-			sourceTree = "<group>";
-		};
-		B7211B631F274774000CFFEB /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B641F274774000CFFEB /* SMDataBaseRequest.swift */,
-				B7211B651F274774000CFFEB /* SMRequest.swift */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		B7211B661F274774000CFFEB /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B671F274774000CFFEB /* SMResponse.swift */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		B7211B681F274774000CFFEB /* TableDisposer */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B691F274774000CFFEB /* CellDatas */,
-				B7211B6F1F274774000CFFEB /* Cells */,
-				B7211B721F274774000CFFEB /* Sections */,
-				B7211B751F274774000CFFEB /* TableDisposers */,
-			);
-			path = TableDisposer;
-			sourceTree = "<group>";
-		};
-		B7211B691F274774000CFFEB /* CellDatas */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B6A1F274774000CFFEB /* Base */,
-			);
-			path = CellDatas;
-			sourceTree = "<group>";
-		};
-		B7211B6A1F274774000CFFEB /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B6B1F274774000CFFEB /* SMCellData.swift */,
-				B7211B6C1F274774000CFFEB /* SMCellDataMaped.swift */,
-				B7211B6D1F274774000CFFEB /* SMCellDataModeled.swift */,
-				B7211B6E1F274774000CFFEB /* SMCellProtocol.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		B7211B6F1F274774000CFFEB /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B701F274774000CFFEB /* Base */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		B7211B701F274774000CFFEB /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B711F274774000CFFEB /* SMCell.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		B7211B721F274774000CFFEB /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B731F274774000CFFEB /* SMSectionReadonly.swift */,
-				B7211B741F274774000CFFEB /* SMSectionWritable.swift */,
-			);
-			path = Sections;
-			sourceTree = "<group>";
-		};
-		B7211B751F274774000CFFEB /* TableDisposers */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B761F274774000CFFEB /* SMTableDisposer.swift */,
-				B7211B771F274774000CFFEB /* SMTableDisposerModeled.swift */,
-			);
-			path = TableDisposers;
-			sourceTree = "<group>";
-		};
-		B7211B781F274774000CFFEB /* Validators */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B791F274774000CFFEB /* SMValidationGroup.swift */,
-				B7211B7A1F274774000CFFEB /* SMValidator.swift */,
-			);
-			path = Validators;
-			sourceTree = "<group>";
-		};
-		B7211B7B1F274774000CFFEB /* Vc */ = {
-			isa = PBXGroup;
-			children = (
-				B7211B7C1F274774000CFFEB /* SMViewController.swift */,
-				B7211B7D1F274774000CFFEB /* UIViewController+Help.swift */,
-			);
-			path = Vc;
 			sourceTree = "<group>";
 		};
 		B7211B7E1F274774000CFFEB /* CoreData */ = {
@@ -1341,7 +1021,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A1F2D4677339AA3379616DD8 /* [CP] Check Pods Manifest.lock */ = {
@@ -1356,7 +1036,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AFD7DF5F9A913D686CBF8CD3 /* [CP] Embed Pods Frameworks */ = {
@@ -1414,7 +1094,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D561762064961B0F9A3A6908 /* [CP] Copy Pods Resources */ = {
@@ -1458,60 +1138,36 @@
 				B7211C061F274774000CFFEB /* SMAppDelegate.swift in Sources */,
 				B7211BC01F274774000CFFEB /* Property.swift in Sources */,
 				B78DB31F1F2889E70018D12C /* SMGoalsListViewInput.swift in Sources */,
-				B7211BD91F274774000CFFEB /* SMGatewayRequest.swift in Sources */,
 				B78DB3141F2889E60018D12C /* SMGoalCategoriesViewOutput.swift in Sources */,
 				B78DB3161F2889E60018D12C /* SMGoalsListInteractorInput.swift in Sources */,
-				B7211BCD1F274774000CFFEB /* SMLabel.swift in Sources */,
-				B7211BF41F274774000CFFEB /* UIViewController+Help.swift in Sources */,
-				B7211BC61F274774000CFFEB /* SMActivityPKHUD.swift in Sources */,
-				B7211BD21F274774000CFFEB /* SMFetcherIntoStorage.swift in Sources */,
-				B7211BC91F274774000CFFEB /* SMAlertController.swift in Sources */,
 				B7FEB8321F3069BD00A03D6F /* SMCategoriesDataDisplayManager.swift in Sources */,
 				B78DB3321F288B940018D12C /* SMGoalCell.swift in Sources */,
 				B71A5C511F2F1C87001A0C66 /* SMGoalCellObjectFactory.swift in Sources */,
-				B7211BDC1F274774000CFFEB /* UIImage+Help.swift in Sources */,
-				B7211BC51F274774000CFFEB /* SMActivityAdapter.swift in Sources */,
-				B7211BD71F274774000CFFEB /* SMGateway.swift in Sources */,
-				B7211BCB1F274774000CFFEB /* SMTargetAction.swift in Sources */,
-				B7211BEA1F274774000CFFEB /* SMCellDataModeled.swift in Sources */,
 				B70256741F28C8C600ECB6C8 /* SMGoalService.swift in Sources */,
 				B7211BF81F274774000CFFEB /* SMBOModel.swift in Sources */,
 				B78DB3111F2889E60018D12C /* SMGoalCategoriesModule.swift in Sources */,
 				B7211BB91F274774000CFFEB /* ProgressAtRatioView.swift in Sources */,
-				B7211BD31F274774000CFFEB /* SMFetcherMessage.swift in Sources */,
 				B7211BBA1F274774000CFFEB /* ArcView.swift in Sources */,
 				B78DB30E1F2889E60018D12C /* SMGoalCategoriesPresenter.swift in Sources */,
 				B7211C091F274801000CFFEB /* SMUIConfigurator.swift in Sources */,
-				B7211BC71F274774000CFFEB /* SMNativePullToRefreshAdapter.swift in Sources */,
 				B7211BFA1F274774000CFFEB /* String+Help.swift in Sources */,
 				B7211BC21F274774000CFFEB /* ColorUtil.swift in Sources */,
 				B7211BF61F274774000CFFEB /* _SMBOGoal.swift in Sources */,
-				B7211BE31F274774000CFFEB /* SMModuleListPaging.swift in Sources */,
-				B7211BC81F274774000CFFEB /* SMPullToRefreshAdapter.swift in Sources */,
 				B7FEB8301F30682200A03D6F /* SMCategoryCellObjectFactory.swift in Sources */,
 				B78DB2FE1F2889E60018D12C /* SMCreateGoalInteractorInput.swift in Sources */,
 				B78DB32C1F2889E70018D12C /* SMMatchGoalViewOutput.swift in Sources */,
 				B78DB33B1F288E570018D12C /* SMCategoryCell.swift in Sources */,
-				B7211BF11F274774000CFFEB /* SMValidationGroup.swift in Sources */,
 				B78DB31D1F2889E70018D12C /* SMGoalsListModule.swift in Sources */,
 				B78DB31C1F2889E70018D12C /* SMGoalsListRouterInput.swift in Sources */,
 				B78DB3281F2889E70018D12C /* SMMatchGoalRouterInput.swift in Sources */,
-				B7211BCF1F274774000CFFEB /* SMTextView.swift in Sources */,
 				B7211C131F274902000CFFEB /* SMBaseNavigationController.swift in Sources */,
 				B78DB3091F2889E60018D12C /* SMGoalCategoriesInteractor.swift in Sources */,
-				B7211BD61F274774000CFFEB /* SMFormatter.swift in Sources */,
 				B78DB3101F2889E60018D12C /* SMGoalCategoriesRouterInput.swift in Sources */,
-				B7211BCE1F274774000CFFEB /* SMTextField.swift in Sources */,
 				B7211BF71F274774000CFFEB /* SMBOGoal.swift in Sources */,
-				B7211BF21F274774000CFFEB /* SMValidator.swift in Sources */,
 				B78DB3051F2889E60018D12C /* SMCreateGoalModule.swift in Sources */,
 				B78DB30A1F2889E60018D12C /* SMGoalCategoriesInteractorInput.swift in Sources */,
-				B7211BE11F274774000CFFEB /* UIView+PSSizes.swift in Sources */,
-				B7211BED1F274774000CFFEB /* SMSectionReadonly.swift in Sources */,
 				B7211C051F274774000CFFEB /* SMUserNotificationDelegate.swift in Sources */,
 				B78DB3201F2889E70018D12C /* SMGoalsListViewOutput.swift in Sources */,
-				B7211BE81F274774000CFFEB /* SMCellData.swift in Sources */,
-				B7211BE61F274774000CFFEB /* SMRequest.swift in Sources */,
 				B78DB31B1F2889E70018D12C /* SMGoalsListRouter.swift in Sources */,
 				B7211C031F274774000CFFEB /* SMMainStore.swift in Sources */,
 				B78DB3021F2889E60018D12C /* SMCreateGoalPresenter.swift in Sources */,
@@ -1521,69 +1177,45 @@
 				B78DB2FF1F2889E60018D12C /* SMCreateGoalInteractorOutput.swift in Sources */,
 				B78DB30D1F2889E60018D12C /* SMGoalCategoriesModuleOutput.swift in Sources */,
 				B78DB3011F2889E60018D12C /* SMCreateGoalModuleOutput.swift in Sources */,
-				B7211BE41F274774000CFFEB /* SMModuleRemotePushes.swift in Sources */,
 				B78DB32A1F2889E70018D12C /* SMMatchGoalViewController.swift in Sources */,
 				B78DB3291F2889E70018D12C /* SMMatchGoalModule.swift in Sources */,
-				B7211BEC1F274774000CFFEB /* SMCell.swift in Sources */,
-				B7211BF31F274774000CFFEB /* SMViewController.swift in Sources */,
-				B7211BDE1F274774000CFFEB /* UILabel+Help.swift in Sources */,
 				B78DB3261F2889E70018D12C /* SMMatchGoalPresenter.swift in Sources */,
 				B78DB3071F2889E60018D12C /* SMCreateGoalViewInput.swift in Sources */,
 				B78DB30C1F2889E60018D12C /* SMGoalCategoriesModuleInput.swift in Sources */,
 				B78DB3151F2889E60018D12C /* SMGoalsListInteractor.swift in Sources */,
 				B78DB3251F2889E70018D12C /* SMMatchGoalModuleOutput.swift in Sources */,
-				B7211BD51F274774000CFFEB /* SMFetcherWithRequest.swift in Sources */,
-				B7211BD01F274774000CFFEB /* SMStorage.swift in Sources */,
-				B7211BD11F274774000CFFEB /* SMDataFetcherProtocol.swift in Sources */,
 				B78DB30B1F2889E60018D12C /* SMGoalCategoriesInteractorOutput.swift in Sources */,
 				B78DB3211F2889E70018D12C /* SMMatchGoalInteractor.swift in Sources */,
 				B71A5C531F2F383E001A0C66 /* SMFloatingTextField.swift in Sources */,
 				B7211BF91F274774000CFFEB /* SMCategoryType.swift in Sources */,
 				B7211C041F274774000CFFEB /* SMModuleLocalPushes.swift in Sources */,
-				B7211BE01F274774000CFFEB /* UIView+Help.swift in Sources */,
 				B78DB3121F2889E60018D12C /* SMGoalCategoriesViewController.swift in Sources */,
 				B7211BBD1F274774000CFFEB /* GradientArcView.swift in Sources */,
-				B7211BEE1F274774000CFFEB /* SMSectionWritable.swift in Sources */,
 				B78DB2FD1F2889E60018D12C /* SMCreateGoalInteractor.swift in Sources */,
 				B7211BC11F274774000CFFEB /* OrangeClearStyle.swift in Sources */,
 				B7211BBC1F274774000CFFEB /* BaseWindow.swift in Sources */,
 				B7211BBB1F274774000CFFEB /* Background.swift in Sources */,
 				B78DB3031F2889E60018D12C /* SMCreateGoalRouter.swift in Sources */,
 				B78DB3411F2898CF0018D12C /* SMGoal.swift in Sources */,
-				B7211BDF1F274774000CFFEB /* UIView+Animation.swift in Sources */,
 				B78DB30F1F2889E60018D12C /* SMGoalCategoriesRouter.swift in Sources */,
-				B7211BE51F274774000CFFEB /* SMDataBaseRequest.swift in Sources */,
-				B7211BDA1F274774000CFFEB /* SMColor.swift in Sources */,
 				B78DB3181F2889E60018D12C /* SMGoalsListModuleInput.swift in Sources */,
 				B71A5C4F1F2F1A17001A0C66 /* SMGoalsDataDisplayManager.swift in Sources */,
-				B7211BDD1F274774000CFFEB /* UIImageView+Help.swift in Sources */,
 				B78DB3041F2889E60018D12C /* SMCreateGoalRouterInput.swift in Sources */,
 				B7FEB8341F30848E00A03D6F /* SMMatchGoalService.swift in Sources */,
 				B78DB3241F2889E70018D12C /* SMMatchGoalModuleInput.swift in Sources */,
 				B78DB3231F2889E70018D12C /* SMMatchGoalInteractorOutput.swift in Sources */,
 				B7211BF51F274774000CFFEB /* DataModel.xcdatamodeld in Sources */,
 				B78DB3131F2889E60018D12C /* SMGoalCategoriesViewInput.swift in Sources */,
-				B7211BD41F274774000CFFEB /* SMFetcherWithBlock.swift in Sources */,
 				B78DB31A1F2889E70018D12C /* SMGoalsListPresenter.swift in Sources */,
-				B7211BDB1F274774000CFFEB /* UIButton+Help.swift in Sources */,
 				B78DB3081F2889E60018D12C /* SMCreateGoalViewOutput.swift in Sources */,
-				B7211BD81F274774000CFFEB /* SMGatewayConfigurator.swift in Sources */,
 				B78DB3221F2889E70018D12C /* SMMatchGoalInteractorInput.swift in Sources */,
 				B78DB3171F2889E60018D12C /* SMGoalsListInteractorOutput.swift in Sources */,
 				B78DB3061F2889E60018D12C /* SMCreateGoalViewController.swift in Sources */,
-				B7211BE71F274774000CFFEB /* SMResponse.swift in Sources */,
-				B7211BCA1F274774000CFFEB /* SMPair.swift in Sources */,
 				B7211BBE1F274774000CFFEB /* GradientArcWithClearColorView.swift in Sources */,
 				B7211C111F2748E1000CFFEB /* SMBaseViewController.swift in Sources */,
-				B7211BEB1F274774000CFFEB /* SMCellProtocol.swift in Sources */,
-				B7211BF01F274774000CFFEB /* SMTableDisposerModeled.swift in Sources */,
 				B78DB3001F2889E60018D12C /* SMCreateGoalModuleInput.swift in Sources */,
-				B7211BCC1F274774000CFFEB /* SMTitledID.swift in Sources */,
 				B7211BBF1F274774000CFFEB /* ProgressView.swift in Sources */,
 				B78DB31E1F2889E70018D12C /* SMGoalsListViewController.swift in Sources */,
-				B7211BE91F274774000CFFEB /* SMCellDataMaped.swift in Sources */,
-				B7211BE21F274774000CFFEB /* SMModuleList.swift in Sources */,
-				B7211BEF1F274774000CFFEB /* SMTableDisposer.swift in Sources */,
 				B78DB3271F2889E70018D12C /* SMMatchGoalRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1741,10 +1373,11 @@
 				INFOPLIST_FILE = MyGoal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyGoal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gethabit.vrgsoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1758,9 +1391,10 @@
 				INFOPLIST_FILE = MyGoal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MyGoal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gethabit.vrgsoft;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

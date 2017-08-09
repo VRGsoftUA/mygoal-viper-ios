@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import VRGSoftSwiftIOSKit
 
 class SMUIConfigurator: AnyObject {
     

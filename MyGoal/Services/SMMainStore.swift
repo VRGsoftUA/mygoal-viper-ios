@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import VRGSoftSwiftIOSKit
 
 class SMMainStore: SMStorage {
     
