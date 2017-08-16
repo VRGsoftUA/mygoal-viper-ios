@@ -30,7 +30,7 @@
 //VC SMNewGoalViewController
 "create_goal_title" = "НОВА ЗВИЧКА";
 "create_goal_tf_habit" = "Назва звички";
-"create_goal_tf_question" = "Питання (Чи ...сьогодні?";
+"create_goal_tf_question" = "Питання (Чи зробили Ви...сьогодні?)";
 
 //VC SMQuestionViewController
 "check_goal_title" = "Відзначити досягнення";

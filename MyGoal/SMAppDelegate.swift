@@ -8,6 +8,9 @@
 
 import UIKit
 import UserNotifications
+import Fabric
+import Crashlytics
+
 
 @UIApplicationMain
 class SMAppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +35,9 @@ class SMAppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         center.delegate = pushDelegate
+        
+        Fabric.with([Crashlytics.self])
+
         
         return true
     }

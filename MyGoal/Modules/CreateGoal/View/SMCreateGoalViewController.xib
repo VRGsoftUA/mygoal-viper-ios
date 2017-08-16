@@ -128,12 +128,12 @@
                                         <constraint firstItem="xnx-48-fwm" firstAttribute="leading" secondItem="36y-Jb-0Jf" secondAttribute="leading" constant="20" id="ivj-nH-KAt"/>
                                         <constraint firstAttribute="trailing" secondItem="JPr-Ky-vhL" secondAttribute="trailing" constant="20" id="jb5-es-AL1"/>
                                         <constraint firstAttribute="bottom" secondItem="xGb-BO-LfV" secondAttribute="bottom" priority="750" constant="100" id="r6k-cy-ZNJ"/>
-                                        <constraint firstItem="xGb-BO-LfV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dD7-Ry-rfS" secondAttribute="bottom" constant="20" id="tSF-aX-O01"/>
-                                        <constraint firstItem="JPr-Ky-vhL" firstAttribute="top" secondItem="36y-Jb-0Jf" secondAttribute="top" constant="90" id="vJZ-J3-9An"/>
+                                        <constraint firstItem="xGb-BO-LfV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dD7-Ry-rfS" secondAttribute="bottom" constant="15" id="tSF-aX-O01"/>
+                                        <constraint firstItem="JPr-Ky-vhL" firstAttribute="top" secondItem="36y-Jb-0Jf" secondAttribute="top" priority="750" constant="90" id="vJZ-J3-9An"/>
                                         <constraint firstAttribute="trailing" secondItem="gv8-sJ-CGg" secondAttribute="trailing" constant="64" id="ygZ-II-6HP"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="НОВАЯ ПРИВЫЧКА" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-21-4Hm" userLabel="lbTitle">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="НОВАЯ ПРИВЫЧКА" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-21-4Hm" userLabel="lbTitle">
                                     <rect key="frame" x="85" y="40" width="319" height="28"/>
                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
                                     <nil key="textColor"/>

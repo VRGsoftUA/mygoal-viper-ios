@@ -52,13 +52,13 @@ class SMCreateGoalViewController: SMBaseViewController {
         tfHabit.placeholder = "create_goal_tf_habit".localized()
         tfHabit.vLine?.backgroundColor = UIColor.darkGray
         tfHabit.placeholderColor = UIColor.lightGray
-        tfHabit.lbPlaceHolder?.font = UIFont(name: SMUIConfigurator.shared.fonts.regular, size: 14)
+        tfHabit.lbPlaceHolder?.font = UIFont(name: SMUIConfigurator.shared.fonts.regular, size: 13)
         
         tfQuestion.delegate = self
         tfQuestion.placeholder = "create_goal_tf_question".localized()
         tfQuestion.vLine?.backgroundColor = UIColor.darkGray
         tfQuestion.placeholderColor = UIColor.lightGray
-        tfQuestion.lbPlaceHolder?.font = UIFont(name: SMUIConfigurator.shared.fonts.regular, size: 14)
+        tfQuestion.lbPlaceHolder?.font = UIFont(name: SMUIConfigurator.shared.fonts.regular, size: 13)
         
         timePicker.datePickerMode = .time
         timePicker.backgroundColor = .white
@@ -123,7 +123,6 @@ class SMCreateGoalViewController: SMBaseViewController {
         }
     }
 }
-
 
 extension SMCreateGoalViewController: SMCreateGoalViewInput {
 

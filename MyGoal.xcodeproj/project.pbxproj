@@ -117,6 +117,8 @@
 		B78DB33C1F288E570018D12C /* SMCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78DB33A1F288E570018D12C /* SMCategoryCell.xib */; };
 		B78DB33E1F288E670018D12C /* SMGoalCategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78DB33D1F288E670018D12C /* SMGoalCategoriesViewController.xib */; };
 		B78DB3411F2898CF0018D12C /* SMGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB3401F2898CF0018D12C /* SMGoal.swift */; };
+		B7DBE73C1F44163D007A5527 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBE73A1F44163D007A5527 /* Crashlytics.framework */; };
+		B7DBE73D1F44163D007A5527 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBE73B1F44163D007A5527 /* Fabric.framework */; };
 		B7FCE3C51F31A58B000E74A3 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE3C21F31A58B000E74A3 /* iTunesArtwork@1x.png */; };
 		B7FCE3C61F31A58B000E74A3 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE3C31F31A58B000E74A3 /* iTunesArtwork@2x.png */; };
 		B7FCE3C71F31A58B000E74A3 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE3C41F31A58B000E74A3 /* iTunesArtwork@3x.png */; };
@@ -252,6 +254,8 @@
 		B78DB33A1F288E570018D12C /* SMCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMCategoryCell.xib; sourceTree = "<group>"; };
 		B78DB33D1F288E670018D12C /* SMGoalCategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMGoalCategoriesViewController.xib; sourceTree = "<group>"; };
 		B78DB3401F2898CF0018D12C /* SMGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGoal.swift; sourceTree = "<group>"; };
+		B7DBE73A1F44163D007A5527 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B7DBE73B1F44163D007A5527 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		B7FCE3C21F31A58B000E74A3 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
 		B7FCE3C31F31A58B000E74A3 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B7FCE3C41F31A58B000E74A3 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
@@ -272,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6086D22E450EBCEEAFC1B95C /* Pods_MyGoal.framework in Frameworks */,
+				B7DBE73D1F44163D007A5527 /* Fabric.framework in Frameworks */,
+				B7DBE73C1F44163D007A5527 /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +316,8 @@
 		7C87717DEE26CD1E66124E64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7DBE73A1F44163D007A5527 /* Crashlytics.framework */,
+				B7DBE73B1F44163D007A5527 /* Fabric.framework */,
 				D722495BD82D3A99BC62E490 /* Pods_MyGoal.framework */,
 				7E6DDFF14CC9F163CC83742C /* Pods_MyGoalTests.framework */,
 				5CBBC38FB998E2A7D37195A7 /* Pods_MyGoalUITests.framework */,
@@ -829,6 +837,7 @@
 				B7211A281F272E4A000CFFEB /* Resources */,
 				0B4D48BA87FA4D5EDE8F23C1 /* [CP] Embed Pods Frameworks */,
 				1A93910E6CED3895D061B4A1 /* [CP] Copy Pods Resources */,
+				B7B7A9C01F41EBD30063CE6B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1068,6 +1077,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cd MyGoal/CoreData\nmogenerator --swift --machine-dir \"./Models/RAW\" --human-dir \"./Models\" --template-var arc=true -m ./DataModel.xcdatamodeld/DataModel.xcdatamodel --base-class \"SMBOModel\"";
+		};
+		B7B7A9C01F41EBD30063CE6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e0d8d56ad228c48c15ce677d44e8d5f9360d8043 f1e6750886dc095b2a3dc0f426b393b1951069502d24ce16099150933644f317";
 		};
 		C788879CD473DE0D7886D32E /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1371,7 +1393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TXRFU397LA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyGoal/Resource",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyGoal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1390,6 +1418,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TXRFU397LA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyGoal/Resource",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyGoal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
