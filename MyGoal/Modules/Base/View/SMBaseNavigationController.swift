@@ -28,7 +28,7 @@ class SMBaseNavigationController: UINavigationController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return self.topViewController!.preferredStatusBarStyle
+        return .default
     }
 
 }

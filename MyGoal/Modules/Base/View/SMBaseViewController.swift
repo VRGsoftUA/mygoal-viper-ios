@@ -53,7 +53,7 @@ class SMBaseViewController: SMViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
+        return .default
     }
     
     func convertDateWithDate(_ aDate: Date, _ aFormat: String) -> String {
