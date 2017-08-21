@@ -24,7 +24,14 @@ class SMBaseViewController: SMViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.backgroundImageView?.contentMode = .scaleAspectFill
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
+        
         let navBarColor: UIColor? = self.navBarColor()
         
         if self.navigationController != nil {

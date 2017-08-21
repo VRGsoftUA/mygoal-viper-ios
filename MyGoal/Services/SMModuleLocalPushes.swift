@@ -20,7 +20,6 @@ class SMModuleLocalPushes: NSObject {
             
             if settings.authorizationStatus == .authorized {
                 let content = UNMutableNotificationContent()
-                content.title = "common_App_name".localized()
                 content.body = aSubtitle
                 content.sound = UNNotificationSound.default()
                 content.userInfo.updateValue(goal.identifier, forKey: "id")

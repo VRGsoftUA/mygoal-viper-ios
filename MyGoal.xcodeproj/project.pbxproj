@@ -28,7 +28,6 @@
 		B71A5C4F1F2F1A17001A0C66 /* SMGoalsDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A5C4E1F2F1A17001A0C66 /* SMGoalsDataDisplayManager.swift */; };
 		B71A5C511F2F1C87001A0C66 /* SMGoalCellObjectFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A5C501F2F1C87001A0C66 /* SMGoalCellObjectFactory.swift */; };
 		B71A5C531F2F383E001A0C66 /* SMFloatingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A5C521F2F383E001A0C66 /* SMFloatingTextField.swift */; };
-		B7211A431F272E4A000CFFEB /* MyGoalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211A421F272E4A000CFFEB /* MyGoalTests.swift */; };
 		B7211A4E1F272E4A000CFFEB /* MyGoalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211A4D1F272E4A000CFFEB /* MyGoalUITests.swift */; };
 		B7211BB71F274774000CFFEB /* GradientCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B231F274774000CFFEB /* GradientCircularProgress.swift */; };
 		B7211BB81F274774000CFFEB /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7211B261F274774000CFFEB /* CircularProgressView.swift */; };
@@ -119,6 +118,7 @@
 		B78DB3411F2898CF0018D12C /* SMGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB3401F2898CF0018D12C /* SMGoal.swift */; };
 		B7DBE7401F4422C6007A5527 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBE73E1F4422C6007A5527 /* Fabric.framework */; };
 		B7DBE7411F4422C6007A5527 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBE73F1F4422C6007A5527 /* Crashlytics.framework */; };
+		B7DBE7491F444E30007A5527 /* CreateGoalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBE7481F444E30007A5527 /* CreateGoalInteractorTests.swift */; };
 		B7FCE3C51F31A58B000E74A3 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE3C21F31A58B000E74A3 /* iTunesArtwork@1x.png */; };
 		B7FCE3C61F31A58B000E74A3 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE3C31F31A58B000E74A3 /* iTunesArtwork@2x.png */; };
 		B7FCE3C71F31A58B000E74A3 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B7FCE3C41F31A58B000E74A3 /* iTunesArtwork@3x.png */; };
@@ -158,7 +158,6 @@
 		B71A5C521F2F383E001A0C66 /* SMFloatingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMFloatingTextField.swift; sourceTree = "<group>"; };
 		B7211A2A1F272E4A000CFFEB /* MyGoal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyGoal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7211A3E1F272E4A000CFFEB /* MyGoalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGoalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7211A421F272E4A000CFFEB /* MyGoalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalTests.swift; sourceTree = "<group>"; };
 		B7211A441F272E4A000CFFEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7211A491F272E4A000CFFEB /* MyGoalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyGoalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7211A4D1F272E4A000CFFEB /* MyGoalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGoalUITests.swift; sourceTree = "<group>"; };
@@ -256,6 +255,7 @@
 		B78DB3401F2898CF0018D12C /* SMGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGoal.swift; sourceTree = "<group>"; };
 		B7DBE73E1F4422C6007A5527 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
 		B7DBE73F1F4422C6007A5527 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
+		B7DBE7481F444E30007A5527 /* CreateGoalInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGoalInteractorTests.swift; sourceTree = "<group>"; };
 		B7FCE3C21F31A58B000E74A3 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
 		B7FCE3C31F31A58B000E74A3 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B7FCE3C41F31A58B000E74A3 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
@@ -373,7 +373,10 @@
 		B7211A411F272E4A000CFFEB /* MyGoalTests */ = {
 			isa = PBXGroup;
 			children = (
-				B7211A421F272E4A000CFFEB /* MyGoalTests.swift */,
+				B7DBE7441F444DD4007A5527 /* CreateGoalTests */,
+				B7DBE7451F444DD4007A5527 /* GoalCategoriesTests */,
+				B7DBE7461F444DD4007A5527 /* GoalsListTests */,
+				B7DBE7471F444DD4007A5527 /* MatchGoalTests */,
 				B7211A441F272E4A000CFFEB /* Info.plist */,
 			);
 			path = MyGoalTests;
@@ -824,6 +827,35 @@
 			path = PlainModels;
 			sourceTree = "<group>";
 		};
+		B7DBE7441F444DD4007A5527 /* CreateGoalTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7DBE7481F444E30007A5527 /* CreateGoalInteractorTests.swift */,
+			);
+			path = CreateGoalTests;
+			sourceTree = "<group>";
+		};
+		B7DBE7451F444DD4007A5527 /* GoalCategoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoalCategoriesTests;
+			sourceTree = "<group>";
+		};
+		B7DBE7461F444DD4007A5527 /* GoalsListTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GoalsListTests;
+			sourceTree = "<group>";
+		};
+		B7DBE7471F444DD4007A5527 /* MatchGoalTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MatchGoalTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -909,6 +941,7 @@
 					B7211A3D1F272E4A000CFFEB = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = TXRFU397LA;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = B7211A291F272E4A000CFFEB;
 					};
@@ -1248,7 +1281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7211A431F272E4A000CFFEB /* MyGoalTests.swift in Sources */,
+				B7DBE7491F444E30007A5527 /* CreateGoalInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1394,6 +1427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TXRFU397LA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1417,6 +1451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = TXRFU397LA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1439,11 +1474,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TXRFU397LA;
 				INFOPLIST_FILE = MyGoalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-.MyGoalTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyGoal.app/MyGoal";
 			};
@@ -1455,6 +1492,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = TXRFU397LA;
 				INFOPLIST_FILE = MyGoalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
