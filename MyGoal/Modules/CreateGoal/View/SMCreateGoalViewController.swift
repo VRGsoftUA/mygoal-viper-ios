@@ -9,10 +9,11 @@
 //
 
 import UIKit
+import VRGSoftSwiftIOSKit
 
 class SMCreateGoalViewController: SMBaseViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var scrollView: SMKeyboardAvoidingScrollView!
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var btCategory: UIButton!
     @IBOutlet weak var vParent: UIView!
@@ -48,13 +49,16 @@ class SMCreateGoalViewController: SMBaseViewController {
         
         vParent.layer.cornerRadius = 5
         
-        tfHabit.delegate = self
+        scrollView.isShowsKeyboardToolbar = true
+        scrollView.addObjectsForKeyboard([tfHabit, tfQuestion])
+        
+        tfHabit.smdelegate = self
         tfHabit.placeholder = "create_goal_tf_habit".localized()
         tfHabit.vLine?.backgroundColor = UIColor.darkGray
         tfHabit.placeholderColor = UIColor.lightGray
         tfHabit.lbPlaceHolder?.font = UIFont(name: SMUIConfigurator.shared.fonts.regular, size: 13)
         
-        tfQuestion.delegate = self
+        tfQuestion.smdelegate = self
         tfQuestion.placeholder = "create_goal_tf_question".localized()
         tfQuestion.vLine?.backgroundColor = UIColor.darkGray
         tfQuestion.placeholderColor = UIColor.lightGray
@@ -137,21 +141,10 @@ extension SMCreateGoalViewController: SMCreateGoalViewInput {
 
 extension SMCreateGoalViewController: UITextFieldDelegate {
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        var result = true
-        if textField == tfHabit {
-            result = tfQuestion.becomeFirstResponder()
-        } else {
-            textField.resignFirstResponder()
-        }
-        return result
-    }
-    
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if textField == tfTime {
             timePicker.date = self.convertStringWithString(tfTime.text!, "HH:mm")
         }
         return true
     }
-    
 }
