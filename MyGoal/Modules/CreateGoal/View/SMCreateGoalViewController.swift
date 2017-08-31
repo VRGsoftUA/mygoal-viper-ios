@@ -11,8 +11,8 @@
 import UIKit
 import VRGSoftSwiftIOSKit
 
-class SMCreateGoalViewController: SMBaseViewController {
-
+class SMCreateGoalViewController: SMBaseViewController
+{
     @IBOutlet weak var scrollView: SMKeyboardAvoidingScrollView!
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var btCategory: UIButton!
@@ -29,12 +29,10 @@ class SMCreateGoalViewController: SMBaseViewController {
     
 	var output: SMCreateGoalViewOutput!
     
-	override func viewDidLoad() {
+	override func viewDidLoad()
+    {
     	super.viewDidLoad()
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChangeFrameNotification(_:)), name: NSNotification.Name.UIKeyboardDidChangeFrame, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHideNotification(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        
+                
         lbTitle.text = "create_goal_title".localized()
         lbNotifications.text = "common_Notification_time".localized()
         
@@ -73,78 +71,74 @@ class SMCreateGoalViewController: SMBaseViewController {
         swNotific.isOn = false
         
 		output.didLoadView()
-        
-        btCancel.addTarget(self, action: #selector(didBtNavLeftClicked), for: .touchUpInside)
     }
     
-    override func didBtNavLeftClicked() {
+    
+    // MARK: - Actions
+    
+    @IBAction func didBtCancelClicked(_ sender: Any)
+    {
         output.didBtBackClicked()
     }
     
-    @IBAction func didBtSaveClicked(_ sender: Any) {
-        
-        if !(tfHabit.text?.isEmpty)! {
+    @IBAction func didBtSaveClicked(_ sender: Any)
+    {
+        if !(tfHabit.text?.isEmpty)!
+        {
             let goal: SMGoal = SMGoal(categoryID: 1, createDate: Date(), habit: tfHabit.text!, identifier: Int(Date().timeIntervalSince1970), lastUpdate: Date(), notificationTime: timePicker.date, progress: 0, question: tfQuestion.text)
             output.didBtCreateClicked(goal: goal)
-        } else {
+        } else
+        {
             self.showAlertController(title: "alert_title_error".localized(), message: "alert_empty_habit_name".localized())
         }
-        
     }
     
-    @IBAction func didBtSelectCategoryClicked(_ sender: Any) {
+    @IBAction func didBtSelectCategoryClicked(_ sender: Any)
+    {
         output.didBtSelectCategoryClicked()
     }
     
-    @IBAction func didTimePickerValueChange(_ sender: Any) {
+    func didTimePickerValueChange(_ sender: Any)
+    {
         tfTime.text = self.convertDateWithDate(timePicker.date, "HH:mm")
     }
     
-    @IBAction func hideKeyboard(_ sender: Any) {
-        view.endEditing(true)
-    }
-    
-    @IBAction func didNotificationTurnOff(_ sender: UISwitch) {
-        if sender.isOn {
+    @IBAction func didNotificationTurnOff(_ sender: UISwitch)
+    {
+        if sender.isOn
+        {
             tfTime.isEnabled = true
             tfTime.becomeFirstResponder()
-        } else {
+        } else
+        {
             tfTime.isEnabled = false
             tfTime.text = nil
         }
     }
-    
-    
-    //MARK: Notification
-    
-    func keyboardWillHideNotification(_ notification: Notification) -> Void {
-        scrollView.contentInset = UIEdgeInsets.zero
-    }
-    
-    func keyboardWillChangeFrameNotification(_ notification: Notification) -> Void {
-        if let keyboardSize = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? CGRect {
-            scrollView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: keyboardSize.height, right: 0)
-        }
-    }
 }
 
-extension SMCreateGoalViewController: SMCreateGoalViewInput {
-
-	func updateViewWith(title: String) {
+extension SMCreateGoalViewController: SMCreateGoalViewInput
+{
+	func updateViewWith(title: String)
+    {
         self.title = title
     }
     
-    func updateViewWith(category: SMCategoryType.SMCategory) {
+    func updateViewWith(category: SMCategoryType.SMCategory)
+    {
         btCategory.setImage(UIImage(named: category.get().1), for: .normal)
     }
 }
 
-extension SMCreateGoalViewController: UITextFieldDelegate {
-    
-    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
-        if textField == tfTime {
+extension SMCreateGoalViewController: UITextFieldDelegate
+{
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool
+    {
+        if textField == tfTime
+        {
             timePicker.date = self.convertStringWithString(tfTime.text!, "HH:mm")
         }
+        
         return true
     }
 }

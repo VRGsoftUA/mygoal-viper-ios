@@ -33,6 +33,16 @@ class SMUIConfigurator: AnyObject {
         return result
     }
     
+    func navButtonAdd() -> UIBarButtonItem
+    {
+        let button = UIBarButtonItem(barButtonSystemItem: .add, target: nil, action: nil)
+    
+        button.tintColor = UIColor.darkGray
+        button.accessibilityLabel = "Add"
+
+        return button
+    }
+    
     func prepareShadowFor(button aButton: UIButton, shadowWith aWidth: CGFloat, shadowHeight aHeight: CGFloat) -> Void {
         aButton.layer.shadowColor = UIColorFromRGB(rgbValue: 0x0000003d).cgColor
         aButton.layer.shadowOffset = CGSize(width: aWidth, height: aHeight)

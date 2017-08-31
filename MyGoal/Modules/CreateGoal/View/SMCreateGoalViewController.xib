@@ -108,6 +108,9 @@
                                             <state key="normal" title="ОТМЕНА">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="didBtCancelClicked:" destination="-1" eventType="touchUpInside" id="Wt5-4Z-bYn"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -177,9 +180,6 @@
                         <constraint firstItem="CUS-OU-vzE" firstAttribute="height" secondItem="Om5-VU-iws" secondAttribute="height" id="wJ7-Dl-hn7"/>
                         <constraint firstItem="CUS-OU-vzE" firstAttribute="top" secondItem="Om5-VU-iws" secondAttribute="top" id="yAf-eg-Gbb"/>
                     </constraints>
-                    <connections>
-                        <outletCollection property="gestureRecognizers" destination="QYP-Hf-28R" appends="YES" id="Ptt-3J-8f7"/>
-                    </connections>
                 </scrollView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -191,11 +191,6 @@
             </constraints>
             <point key="canvasLocation" x="35" y="53"/>
         </view>
-        <tapGestureRecognizer id="QYP-Hf-28R">
-            <connections>
-                <action selector="hideKeyboard:" destination="-1" id="D14-8q-Udk"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="icon_arts" width="80" height="80"/>

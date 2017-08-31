@@ -12,7 +12,7 @@ import UIKit
 
 final class SMCreateGoalRouter {
     
-	weak var view: UIViewController!
+	weak var view: SMBaseViewController!
 }
 
 
@@ -32,14 +32,8 @@ extension SMCreateGoalRouter: SMCreateGoalRouterInput {
         view.present(goalCategoriesView, animated: true, completion: nil)
     }
 
-    func closeCurrentModule() {
-        
-        let isModal =  (view.navigationController?.childViewControllers[0] == view || view.navigationController == nil)
-        
-        if isModal {
-            view.dismiss(animated: true, completion: nil)
-        } else {
-            view.navigationController!.popViewController(animated: true)
-        }
+    func closeCurrentModule()
+    {
+        self.view.close()
     }
 }

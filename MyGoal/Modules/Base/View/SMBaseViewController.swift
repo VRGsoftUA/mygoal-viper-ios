@@ -11,6 +11,8 @@ import VRGSoftSwiftIOSKit
 
 class SMBaseViewController: SMViewController {
     
+    var output1: SMBasePresenter!
+
     private var formatter: DateFormatter
         
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -24,13 +26,16 @@ class SMBaseViewController: SMViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         self.backgroundImageView?.contentMode = .scaleAspectFill
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool)
+    {
+        super.viewWillAppear(animated)
         
         let navBarColor: UIColor? = self.navBarColor()
         
@@ -55,7 +60,7 @@ class SMBaseViewController: SMViewController {
         return SMBaseViewController._bgImage
     }
     
-    func classNavigationController() -> AnyClass {
+    func classNavigationController() -> UINavigationController.Type {
         return SMBaseNavigationController.self
     }
     

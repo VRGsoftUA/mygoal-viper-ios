@@ -20,50 +20,60 @@ class SMGoalsListViewController: SMBaseViewController {
     
     var goals: [SMGoal] = []
     
-	override func viewDidLoad() {
+	override func viewDidLoad()
+    {
     	super.viewDidLoad()
         
-        let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didBtCreateGoalClicked))
-        button.tintColor = UIColor.darkGray
-        button.accessibilityLabel = "Add"
-        navigationItem.rightBarButtonItem = button
-        
         displayManager.configureFor(tableView: tableView, baseDelegate: self)
-        
 		output.didLoadView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func createRightNavButton() -> UIBarButtonItem?
+    {
+        return SMUIConfigurator.shared.navButtonAdd()
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
         super.viewWillAppear(animated)
         
         output.didReloadView()
     }
     
-    func didBtCreateGoalClicked() {
+    
+    // MARK: - Actions
+    
+    override func didBtNavRightClicked()
+    {
         output.didBtCreateGoalClicked()
     }
 }
 
-extension SMGoalsListViewController: SMGoalsListViewInput {
-
-	func updateViewWith(title: String) {
+extension SMGoalsListViewController: SMGoalsListViewInput
+{
+	func updateViewWith(title: String)
+    {
         self.title = title
     }
     
-    func updateViewWith(goals: [SMGoal]) {
+    func updateViewWith(goals: [SMGoal])
+    {
         self.goals = goals
+    
         displayManager.updateTableWith(goals: goals)
     }
 }
 
-extension SMGoalsListViewController: UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+extension SMGoalsListViewController: UITableViewDelegate
+{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
         tableView.deselectRow(at: indexPath, animated: true)
         output.didSelect(goal: goals[indexPath.row])
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
         return 60
     }
 }
