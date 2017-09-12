@@ -9,16 +9,17 @@
 import UIKit
 import UserNotifications
 
-class SMModuleLocalPushes: NSObject {
-    
+class SMModuleLocalPushes: NSObject
+{
     static let shared = SMModuleLocalPushes()
     
-    func subscribeOnPushNotification(subtitle aSubtitle: String, For goal: SMGoal) {
-        
+    func subscribeOnPushNotification(subtitle aSubtitle: String, For goal: SMGoal)
+    {
         let center = UNUserNotificationCenter.current()
         center.getNotificationSettings { (settings) in
             
-            if settings.authorizationStatus == .authorized {
+            if settings.authorizationStatus == .authorized
+            {
                 let content = UNMutableNotificationContent()
                 content.body = aSubtitle
                 content.sound = UNNotificationSound.default()
@@ -32,7 +33,8 @@ class SMModuleLocalPushes: NSObject {
                 let request = UNNotificationRequest(identifier: identifier,
                                                     content: content, trigger: trigger)
                 center.add(request, withCompletionHandler: { (error) in
-                    if error != nil {
+                    if error != nil
+                    {
                         print("Something went wrong")
                     }
                 })
@@ -40,10 +42,10 @@ class SMModuleLocalPushes: NSObject {
         }
     }
     
-    func unsubscribeOnPushNotification(goal: SMGoal) {
+    func unsubscribeOnPushNotification(goal: SMGoal)
+    {
         let center = UNUserNotificationCenter.current()
         center.removeDeliveredNotifications(withIdentifiers: ["SMLocalNotification\(goal.identifier)"])
         center.removePendingNotificationRequests(withIdentifiers: ["SMLocalNotification\(goal.identifier)"])
     }
-
 }

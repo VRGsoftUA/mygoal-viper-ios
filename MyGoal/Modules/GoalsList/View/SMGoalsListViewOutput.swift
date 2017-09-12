@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMGoalsListViewOutput: class {
+protocol SMGoalsListViewOutput: class
+{
 	func didLoadView()
     func didReloadView()
     func didSelect(goal: SMGoal)

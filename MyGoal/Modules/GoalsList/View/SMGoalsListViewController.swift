@@ -10,8 +10,8 @@
 
 import UIKit
 
-class SMGoalsListViewController: SMBaseViewController {
-    
+class SMGoalsListViewController: SMBaseViewController
+{
     @IBOutlet weak var tableView: UITableView!
 
 	var output: SMGoalsListViewOutput!

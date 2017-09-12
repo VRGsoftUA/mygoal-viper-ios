@@ -10,29 +10,35 @@
 
 import UIKit
 
-final class SMCreateGoalModule {
-    
+final class SMCreateGoalModule
+{    
     private var viewController: SMCreateGoalViewController?
     
     var createGoalModuleBlock: (() -> (SMCreateGoalModuleOutput?))?
     
-    var view: UIViewController {
-        guard let view = viewController else {
-            viewController = SMCreateGoalViewController(nibName: "SMCreateGoalViewController", bundle: nil)
+    var view: UIViewController
+    {
+        guard let view = viewController else
+        {
+            viewController = SMCreateGoalViewController()
             self.configureModule(view: viewController!)
             return viewController!
         }
+        
         return view
     }
     
-    static func configureWith(block: @escaping () -> (SMCreateGoalModuleOutput?)) -> SMCreateGoalModule {
+    static func configureWith(block: @escaping () -> (SMCreateGoalModuleOutput?)) -> SMCreateGoalModule
+    {
         let module = SMCreateGoalModule()
         module.createGoalModuleBlock = block
+    
         return module
     }
 
     
-    private func configureModule(view: SMCreateGoalViewController) {
+    private func configureModule(view: SMCreateGoalViewController)
+    {
         let router = SMCreateGoalRouter()
         router.view = view
         
@@ -46,7 +52,8 @@ final class SMCreateGoalModule {
         presenter.interactor = interactor
         view.output = presenter
         
-        if let block = createGoalModuleBlock {
+        if let block = createGoalModuleBlock
+        {
             presenter.outputHandler = block()
         }
     }

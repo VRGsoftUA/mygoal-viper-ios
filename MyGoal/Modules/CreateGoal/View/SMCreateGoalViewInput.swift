@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMCreateGoalViewInput: class {
+protocol SMCreateGoalViewInput: class
+{
     func updateViewWith(title: String)
     func updateViewWith(category: SMCategoryType.SMCategory)
 }

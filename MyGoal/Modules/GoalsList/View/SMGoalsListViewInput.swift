@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMGoalsListViewInput: class {
+protocol SMGoalsListViewInput: class
+{
     func updateViewWith(title: String)
     func updateViewWith(goals: [SMGoal])
 }

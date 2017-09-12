@@ -10,19 +10,20 @@
 
 import Foundation
 
-final class SMGoalsListInteractor {
-    
+final class SMGoalsListInteractor
+{
 	weak var output: SMGoalsListInteractorOutput!
 }
 
-
-extension SMGoalsListInteractor: SMGoalsListInteractorInput {
-
-	func obtainTitle() {
+extension SMGoalsListInteractor: SMGoalsListInteractorInput
+{
+	func obtainTitle()
+    {
 		output.didObtainTitle(text: "goals_list_title".localized())
 	}
     
-    func obtainGoals() {
+    func obtainGoals()
+    {
         output.didObtainGoals(goals: SMGoalService.getAllGoals())
     }
 }

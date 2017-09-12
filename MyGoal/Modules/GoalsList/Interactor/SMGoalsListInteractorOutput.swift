@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMGoalsListInteractorOutput: class {
+protocol SMGoalsListInteractorOutput: class
+{
     func didObtainTitle(text: String)
     func didObtainGoals(goals: [SMGoal])
 }

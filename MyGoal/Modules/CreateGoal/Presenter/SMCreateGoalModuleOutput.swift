@@ -10,6 +10,7 @@
 
 import Foundation
 
-protocol  SMCreateGoalModuleOutput: class {
+protocol  SMCreateGoalModuleOutput: class
+{
     func didCreateGoal()
 }

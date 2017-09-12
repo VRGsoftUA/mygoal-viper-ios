@@ -10,16 +10,16 @@
 
 import UIKit
 
-final class SMCreateGoalRouter {
-    
+final class SMCreateGoalRouter
+{
 	weak var view: SMBaseViewController!
 }
 
 
-extension SMCreateGoalRouter: SMCreateGoalRouterInput {
-    
-    func goToGoalCategories(presenter: SMGoalCategoriesModuleOutput) {
-        
+extension SMCreateGoalRouter: SMCreateGoalRouterInput
+{
+    func goToGoalCategories(presenter: SMGoalCategoriesModuleOutput)
+    {
         let goalCategoriesView = SMGoalCategoriesModule.configureWith { () -> (SMGoalCategoriesModuleOutput) in
             return presenter
         }.view

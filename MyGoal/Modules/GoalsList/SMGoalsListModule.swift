@@ -14,17 +14,21 @@ final class SMGoalsListModule {
     
     private var navigationController: SMBaseNavigationController?
     
-    var view: UIViewController {
-        guard let view = navigationController else {
-            let viewController = SMGoalsListViewController(nibName: String(describing: SMGoalsListViewController.self), bundle: nil)
+    var view: UIViewController
+    {
+        guard let view = navigationController else
+        {
+            let viewController = SMGoalsListViewController()
             navigationController = SMBaseNavigationController(rootViewController: viewController)
             self.configureModule(view: viewController)
             return navigationController!
         }
+        
         return view
     }
     
-    private func configureModule(view: SMGoalsListViewController) {
+    private func configureModule(view: SMGoalsListViewController)
+    {
         
         let router = SMGoalsListRouter()
         router.view = view

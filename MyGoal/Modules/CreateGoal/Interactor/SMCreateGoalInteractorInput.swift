@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMCreateGoalInteractorInput: class {
+protocol SMCreateGoalInteractorInput: class
+{
 	func obtainTitle()
     func save(goal: SMGoal)
 }

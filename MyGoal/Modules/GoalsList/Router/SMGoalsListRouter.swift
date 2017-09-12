@@ -10,21 +10,21 @@
 
 import UIKit
 
-final class SMGoalsListRouter {
-    
+final class SMGoalsListRouter
+{
 	weak var view: UIViewController!
 }
 
 
-extension SMGoalsListRouter: SMGoalsListRouterInput {
-    
-    func goToGoal(goal: SMGoal, presenter: SMMatchGoalModuleOutput) {
-        
+extension SMGoalsListRouter: SMGoalsListRouterInput
+{
+    func goToGoal(goal: SMGoal, presenter: SMMatchGoalModuleOutput)
+    {
         SMMatchGoalService.checkGoalStatus(goalID: goal.identifier as AnyObject)
     }
 
-    func goToCreateGoal(presenter: SMCreateGoalModuleOutput) {
-        
+    func goToCreateGoal(presenter: SMCreateGoalModuleOutput)
+    {
         let createGoalView = SMCreateGoalModule.configureWith { () -> (SMCreateGoalModuleOutput) in
             return presenter
         }.view

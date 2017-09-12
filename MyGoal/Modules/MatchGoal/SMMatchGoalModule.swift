@@ -10,28 +10,34 @@
 
 import UIKit
 
-final class SMMatchGoalModule {
-    
+final class SMMatchGoalModule
+{
     private var viewController: SMMatchGoalViewController?
     
     var matchGoalModuleBlock: ((SMMatchGoalModuleInput) -> ())?
     
-    var view: UIViewController {
-        guard let view = viewController else {
+    var view: UIViewController
+    {
+        guard let view = viewController else
+        {
             viewController = SMMatchGoalViewController(nibName: "SMMatchGoalViewController", bundle: nil)
             self.configureModule(view: viewController!)
             return viewController!
         }
+        
         return view
     }
     
-    static func configureWith(block: @escaping (SMMatchGoalModuleInput) -> ()) -> SMMatchGoalModule {
+    static func configureWith(block: @escaping (SMMatchGoalModuleInput) -> ()) -> SMMatchGoalModule
+    {
         let module = SMMatchGoalModule()
         module.matchGoalModuleBlock = block
+    
         return module
     }
     
-    private func configureModule(view: SMMatchGoalViewController) {
+    private func configureModule(view: SMMatchGoalViewController)
+    {
         let router = SMMatchGoalRouter()
         router.view = view
         
@@ -45,7 +51,8 @@ final class SMMatchGoalModule {
         presenter.interactor = interactor
         view.output = presenter
         
-        if let block = self.matchGoalModuleBlock {
+        if let block = self.matchGoalModuleBlock
+        {
             block(presenter)
         }
     }

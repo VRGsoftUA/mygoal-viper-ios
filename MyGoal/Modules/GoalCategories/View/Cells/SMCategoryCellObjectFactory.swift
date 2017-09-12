@@ -15,10 +15,11 @@ class SMCategoryCellObjectFactory: NSObject {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         
-        if cell == nil {
-            cell = Bundle.main.loadNibNamed(String(describing: SMCategoryCell.self), owner:nil, options: nil)?.last as? UITableViewCell
+        if cell == nil
+        {
+            cell = SMCategoryCell.loadFromNib()
         }
-        
+
         let categoryCell = (cell as! SMCategoryCell)
         
         categoryCell.lbCategory.text = category.get().0

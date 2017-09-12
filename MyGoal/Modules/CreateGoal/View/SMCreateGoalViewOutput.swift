@@ -12,7 +12,8 @@
 
 import Foundation
 
-protocol SMCreateGoalViewOutput: class {
+protocol SMCreateGoalViewOutput: class
+{
 	func didLoadView()
     func didBtBackClicked()
     func didBtCreateClicked(goal: SMGoal)

@@ -17,7 +17,7 @@ final class SMGoalCategoriesModule {
     
     var view: UIViewController {
         guard let view = viewController else {
-            viewController = SMGoalCategoriesViewController(nibName: "SMGoalCategoriesViewController", bundle: nil)
+            viewController = SMGoalCategoriesViewController()
             self.configureModule(view: viewController!)
             return viewController!
         }

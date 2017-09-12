@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMCreateGoalRouterInput: class {
+protocol SMCreateGoalRouterInput: class
+{
     func closeCurrentModule()
     func goToGoalCategories(presenter: SMGoalCategoriesModuleOutput)
 }

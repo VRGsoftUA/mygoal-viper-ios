@@ -10,7 +10,8 @@
 
 import Foundation
 
-protocol SMGoalsListInteractorInput: class {
+protocol SMGoalsListInteractorInput: class
+{
 	func obtainTitle()
     func obtainGoals()
 }

@@ -10,6 +10,7 @@
 
 import Foundation
 
-protocol SMCreateGoalInteractorOutput: class {
+protocol SMCreateGoalInteractorOutput: class
+{
     func didObtainTitle(text: String)
 }

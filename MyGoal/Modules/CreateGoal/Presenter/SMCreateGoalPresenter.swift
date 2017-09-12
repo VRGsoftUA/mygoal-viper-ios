@@ -10,8 +10,8 @@
 
 import UIKit
 
-final class SMCreateGoalPresenter {
-
+final class SMCreateGoalPresenter
+{
 	var router: SMCreateGoalRouterInput!
 	var interactor: SMCreateGoalInteractorInput!
 	weak var view: SMCreateGoalViewInput!
@@ -21,43 +21,51 @@ final class SMCreateGoalPresenter {
     fileprivate var moduleState: SMCreateGoalState = SMCreateGoalState()
 }
 
-extension SMCreateGoalPresenter: SMCreateGoalViewOutput {
+extension SMCreateGoalPresenter: SMCreateGoalViewOutput
+{
     
-    func didBtSelectCategoryClicked() {
+    func didBtSelectCategoryClicked()
+    {
         router.goToGoalCategories(presenter: self)
     }
 
-    func didBtCreateClicked(goal: SMGoal) {
+    func didBtCreateClicked(goal: SMGoal)
+    {
         goal.categoryID = moduleState.selectedCategory?.rawValue ?? 0
         interactor.save(goal: goal)
         outputHandler?.didCreateGoal()
         router.closeCurrentModule()
     }
 
-	func didLoadView() {
+	func didLoadView()
+    {
 		interactor.obtainTitle()
 	}
     
-    func didBtBackClicked() {
+    func didBtBackClicked()
+    {
         router.closeCurrentModule()
     }
 }
 
-extension SMCreateGoalPresenter: SMCreateGoalInteractorOutput {
-
-	func didObtainTitle(text: String) {
+extension SMCreateGoalPresenter: SMCreateGoalInteractorOutput
+{
+	func didObtainTitle(text: String)
+    {
         view.updateViewWith(title: text)
 	}
 }
 
-extension SMCreateGoalPresenter: SMGoalCategoriesModuleOutput {
-
-    func didSelect(category: SMCategoryType.SMCategory) {
+extension SMCreateGoalPresenter: SMGoalCategoriesModuleOutput
+{
+    func didSelect(category: SMCategoryType.SMCategory)
+    {
         moduleState.selectedCategory = category
         view.updateViewWith(category: category)
     }
 }
 
-fileprivate class SMCreateGoalState {
+fileprivate class SMCreateGoalState
+{
     var selectedCategory: SMCategoryType.SMCategory?
 }

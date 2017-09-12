@@ -10,13 +10,15 @@ import UIKit
 
 class SMGoalCellObjectFactory: NSObject {
     
-    static func cellFor(goal: SMGoal, tableView: UITableView) -> UITableViewCell {
+    static func cellFor(goal: SMGoal, tableView: UITableView) -> UITableViewCell
+    {
         let identifier = String(describing: SMGoalCell.self)
         
         var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
         
-        if cell == nil {
-            cell = Bundle.main.loadNibNamed(String(describing: SMGoalCell.self), owner:nil, options: nil)?.last as? UITableViewCell
+        if cell == nil
+        {
+            cell = SMGoalCell.loadFromNib()
         }
         
         let goalCell = (cell as! SMGoalCell)
@@ -29,5 +31,4 @@ class SMGoalCellObjectFactory: NSObject {
         
         return goalCell
     }
-
 }

@@ -9,24 +9,28 @@
 import UIKit
 import VRGSoftSwiftIOSKit
 
-class SMUIConfigurator: AnyObject {
-    
+class SMUIConfigurator: AnyObject
+{
     static let shared = SMUIConfigurator()
 
     let colors: BaseColors = BaseColors()
-    public struct BaseColors {
+    public struct BaseColors
+    {
         public let baseSeparator = UIColorFromRGB(rgbValue: 0xEDEDED)
         public let baseDarkGreen = UIColorFromRGB(rgbValue: 0x025B4D)
     }
 
     let fonts: BaseFont = BaseFont()
-    public struct BaseFont {
+    
+    public struct BaseFont
+    {
         public let bold: String = "Helvetica-Bold"
         public let regular: String = "Helvetica-Light"
         public let medium: String = "Helvetica"
     }
 
-    func navButton() -> UIButton {
+    func navButton() -> UIButton
+    {
         let result: UIButton! = UIButton(type: UIButtonType.system)
         result.backgroundColor = UIColor.clear
         
@@ -43,7 +47,8 @@ class SMUIConfigurator: AnyObject {
         return button
     }
     
-    func prepareShadowFor(button aButton: UIButton, shadowWith aWidth: CGFloat, shadowHeight aHeight: CGFloat) -> Void {
+    func prepareShadowFor(button aButton: UIButton, shadowWith aWidth: CGFloat, shadowHeight aHeight: CGFloat) -> Void
+    {
         aButton.layer.shadowColor = UIColorFromRGB(rgbValue: 0x0000003d).cgColor
         aButton.layer.shadowOffset = CGSize(width: aWidth, height: aHeight)
         aButton.layer.shadowOpacity = 0.7

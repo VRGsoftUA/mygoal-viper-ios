@@ -11,18 +11,18 @@ import VRGSoftSwiftIOSKit
 
 class SMBaseViewController: SMViewController {
     
-    var output1: SMBasePresenter!
-
-    private var formatter: DateFormatter
+    private var formatter: DateFormatter = DateFormatter()
         
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        formatter = DateFormatter()
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
+    {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        
         formatter.amSymbol = "am"
         formatter.pmSymbol = "pm"
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder)
+    {
         fatalError("init(coder:) has not been implemented")
     }
     

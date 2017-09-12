@@ -8,14 +8,15 @@
 import UIKit
 import VRGSoftSwiftIOSKit
 
-class SMFloatingTextField: SMTextField {
-    
+class SMFloatingTextField: SMTextField
+{
     var topMargin: CGFloat = 5
     
     var vLine: UIView! = UIView()
     var lbPlaceHolder: UILabel! = UILabel()
 
-    override func setup() {
+    override func setup()
+    {
         super.setup()
         
         vLine.frame = CGRect(x: 0, y: self.frame.size.height - 0.5, width: self.frame.size.width, height: 0.5)
@@ -81,7 +82,8 @@ class SMFloatingTextField: SMTextField {
         }
     }
     
-    override func becomeFirstResponder() -> Bool {
+    override func becomeFirstResponder() -> Bool
+    {
         UIView.animate(withDuration: 0.2) {
             var frame = self.bounds
             frame.origin.y = 0
@@ -94,7 +96,8 @@ class SMFloatingTextField: SMTextField {
         return super.becomeFirstResponder()
     }
 
-    override func resignFirstResponder() -> Bool {
+    override func resignFirstResponder() -> Bool
+    {
         UIView.animate(withDuration: 0.2) {
             self.updatePlaceHolderFrame()
             self.vLine.frame = CGRect(x: 0, y: self.frame.size.height - 0.5, width: self.frame.size.width, height: 0.5)
@@ -103,7 +106,8 @@ class SMFloatingTextField: SMTextField {
         return super.resignFirstResponder()
     }
     
-    override func textRect(forBounds bounds: CGRect) -> CGRect {
+    override func textRect(forBounds bounds: CGRect) -> CGRect
+    {
         var rect = super.textRect(forBounds: bounds)
         
         rect.origin.y = self.topMargin
@@ -111,7 +115,8 @@ class SMFloatingTextField: SMTextField {
         return rect
     }
 
-    override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
+    override func placeholderRect(forBounds bounds: CGRect) -> CGRect
+    {
         var rect = super.placeholderRect(forBounds: bounds)
         
         rect.origin.y = self.topMargin
@@ -119,7 +124,8 @@ class SMFloatingTextField: SMTextField {
         return rect
     }
 
-    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+    override func editingRect(forBounds bounds: CGRect) -> CGRect
+    {
         var rect = super.editingRect(forBounds: bounds)
         
         rect.origin.y = self.topMargin
@@ -127,14 +133,17 @@ class SMFloatingTextField: SMTextField {
         return rect
     }
     
-    func updatePlaceHolderFrame() -> Void {
-        if self.text != nil && self.text?.characters.count != 0 {
+    func updatePlaceHolderFrame() -> Void
+    {
+        if self.text != nil && self.text?.characters.count != 0
+        {
             var frame = self.bounds
             frame.origin.y = 0
             frame.size.height = lbPlaceHolder.font.pointSize
             lbPlaceHolder.transform = CGAffineTransform.init(scaleX: 0.8, y: 0.8)
             lbPlaceHolder.frame = frame
-        } else {
+        } else
+        {
             lbPlaceHolder.transform = CGAffineTransform.init(scaleX: 1.0, y: 1.0)
             lbPlaceHolder.frame = self.textRect(forBounds: self.bounds)
         }

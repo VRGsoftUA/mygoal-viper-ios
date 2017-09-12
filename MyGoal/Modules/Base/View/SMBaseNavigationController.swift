@@ -8,9 +8,10 @@
 
 import UIKit
 
-class SMBaseNavigationController: UINavigationController {
-
-    override func viewDidLoad() {
+class SMBaseNavigationController: UINavigationController
+{
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         let verticalOffset: CGFloat = 0
@@ -27,7 +28,8 @@ class SMBaseNavigationController: UINavigationController {
         self.navigationBar.layer.shadowOpacity = 0.3
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    override var preferredStatusBarStyle: UIStatusBarStyle
+    {
         return .default
     }
 

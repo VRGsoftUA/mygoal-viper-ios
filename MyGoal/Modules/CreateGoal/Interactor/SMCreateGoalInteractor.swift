@@ -10,19 +10,20 @@
 
 import Foundation
 
-final class SMCreateGoalInteractor {
-    
+final class SMCreateGoalInteractor
+{
 	weak var output: SMCreateGoalInteractorOutput!
 }
 
-
-extension SMCreateGoalInteractor: SMCreateGoalInteractorInput {
-
-	func obtainTitle() {
+extension SMCreateGoalInteractor: SMCreateGoalInteractorInput
+{
+	func obtainTitle()
+    {
 		output.didObtainTitle(text: "create_goal_title".localized())
 	}
     
-    func save(goal: SMGoal) {
+    func save(goal: SMGoal)
+    {
         SMGoalService.createNewGoal(plainModel: goal)
         SMModuleLocalPushes.shared.subscribeOnPushNotification(subtitle: "push_title".localized(), For: goal)
     }

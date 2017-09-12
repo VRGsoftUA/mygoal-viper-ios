@@ -62,7 +62,6 @@
 		B78DB2FD1F2889E60018D12C /* SMCreateGoalInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BB1F2889E60018D12C /* SMCreateGoalInteractor.swift */; };
 		B78DB2FE1F2889E60018D12C /* SMCreateGoalInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BC1F2889E60018D12C /* SMCreateGoalInteractorInput.swift */; };
 		B78DB2FF1F2889E60018D12C /* SMCreateGoalInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BD1F2889E60018D12C /* SMCreateGoalInteractorOutput.swift */; };
-		B78DB3001F2889E60018D12C /* SMCreateGoalModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2BF1F2889E60018D12C /* SMCreateGoalModuleInput.swift */; };
 		B78DB3011F2889E60018D12C /* SMCreateGoalModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2C01F2889E60018D12C /* SMCreateGoalModuleOutput.swift */; };
 		B78DB3021F2889E60018D12C /* SMCreateGoalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2C11F2889E60018D12C /* SMCreateGoalPresenter.swift */; };
 		B78DB3031F2889E60018D12C /* SMCreateGoalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB2C31F2889E60018D12C /* SMCreateGoalRouter.swift */; };
@@ -114,10 +113,6 @@
 		B78DB33C1F288E570018D12C /* SMCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78DB33A1F288E570018D12C /* SMCategoryCell.xib */; };
 		B78DB33E1F288E670018D12C /* SMGoalCategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78DB33D1F288E670018D12C /* SMGoalCategoriesViewController.xib */; };
 		B78DB3411F2898CF0018D12C /* SMGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78DB3401F2898CF0018D12C /* SMGoal.swift */; };
-		B7A0C4BD1F55A2DE00F142C6 /* SMBaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A0C4BC1F55A2DE00F142C6 /* SMBaseModule.swift */; };
-		B7A0C4BF1F55B76000F142C6 /* SMBasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A0C4BE1F55B76000F142C6 /* SMBasePresenter.swift */; };
-		B7A0C4C11F55BCA600F142C6 /* SMBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A0C4C01F55BCA600F142C6 /* SMBaseRouter.swift */; };
-		B7A0C4C31F55BCC700F142C6 /* SMBaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A0C4C21F55BCC700F142C6 /* SMBaseInteractor.swift */; };
 		B7DBE7401F4422C6007A5527 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBE73E1F4422C6007A5527 /* Fabric.framework */; };
 		B7DBE7411F4422C6007A5527 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DBE73F1F4422C6007A5527 /* Crashlytics.framework */; };
 		B7DBE7491F444E30007A5527 /* CreateGoalInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DBE7481F444E30007A5527 /* CreateGoalInteractorTests.swift */; };
@@ -201,7 +196,6 @@
 		B78DB2BB1F2889E60018D12C /* SMCreateGoalInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalInteractor.swift; sourceTree = "<group>"; };
 		B78DB2BC1F2889E60018D12C /* SMCreateGoalInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalInteractorInput.swift; sourceTree = "<group>"; };
 		B78DB2BD1F2889E60018D12C /* SMCreateGoalInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalInteractorOutput.swift; sourceTree = "<group>"; };
-		B78DB2BF1F2889E60018D12C /* SMCreateGoalModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalModuleInput.swift; sourceTree = "<group>"; };
 		B78DB2C01F2889E60018D12C /* SMCreateGoalModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalModuleOutput.swift; sourceTree = "<group>"; };
 		B78DB2C11F2889E60018D12C /* SMCreateGoalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalPresenter.swift; sourceTree = "<group>"; };
 		B78DB2C31F2889E60018D12C /* SMCreateGoalRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMCreateGoalRouter.swift; sourceTree = "<group>"; };
@@ -253,10 +247,6 @@
 		B78DB33A1F288E570018D12C /* SMCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMCategoryCell.xib; sourceTree = "<group>"; };
 		B78DB33D1F288E670018D12C /* SMGoalCategoriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMGoalCategoriesViewController.xib; sourceTree = "<group>"; };
 		B78DB3401F2898CF0018D12C /* SMGoal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGoal.swift; sourceTree = "<group>"; };
-		B7A0C4BC1F55A2DE00F142C6 /* SMBaseModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBaseModule.swift; sourceTree = "<group>"; };
-		B7A0C4BE1F55B76000F142C6 /* SMBasePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBasePresenter.swift; sourceTree = "<group>"; };
-		B7A0C4C01F55BCA600F142C6 /* SMBaseRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBaseRouter.swift; sourceTree = "<group>"; };
-		B7A0C4C21F55BCC700F142C6 /* SMBaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMBaseInteractor.swift; sourceTree = "<group>"; };
 		B7DBE73E1F4422C6007A5527 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../Fabric.framework; sourceTree = "<group>"; };
 		B7DBE73F1F4422C6007A5527 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../Crashlytics.framework; sourceTree = "<group>"; };
 		B7DBE7481F444E30007A5527 /* CreateGoalInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateGoalInteractorTests.swift; sourceTree = "<group>"; };
@@ -521,7 +511,6 @@
 		B7211B8B1F274774000CFFEB /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B7A0C4BB1F55A2A300F142C6 /* Module */,
 				B7211B8E1F274774000CFFEB /* View */,
 			);
 			path = Base;
@@ -615,7 +604,6 @@
 		B78DB2BE1F2889E60018D12C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				B78DB2BF1F2889E60018D12C /* SMCreateGoalModuleInput.swift */,
 				B78DB2C11F2889E60018D12C /* SMCreateGoalPresenter.swift */,
 				B78DB2C01F2889E60018D12C /* SMCreateGoalModuleOutput.swift */,
 			);
@@ -828,17 +816,6 @@
 				B78DB3401F2898CF0018D12C /* SMGoal.swift */,
 			);
 			path = PlainModels;
-			sourceTree = "<group>";
-		};
-		B7A0C4BB1F55A2A300F142C6 /* Module */ = {
-			isa = PBXGroup;
-			children = (
-				B7A0C4BC1F55A2DE00F142C6 /* SMBaseModule.swift */,
-				B7A0C4BE1F55B76000F142C6 /* SMBasePresenter.swift */,
-				B7A0C4C01F55BCA600F142C6 /* SMBaseRouter.swift */,
-				B7A0C4C21F55BCC700F142C6 /* SMBaseInteractor.swift */,
-			);
-			path = Module;
 			sourceTree = "<group>";
 		};
 		B7DBE7441F444DD4007A5527 /* CreateGoalTests */ = {
@@ -1212,7 +1189,6 @@
 				B78DB3141F2889E60018D12C /* SMGoalCategoriesViewOutput.swift in Sources */,
 				B78DB3161F2889E60018D12C /* SMGoalsListInteractorInput.swift in Sources */,
 				B7FEB8321F3069BD00A03D6F /* SMCategoriesDataDisplayManager.swift in Sources */,
-				B7A0C4C11F55BCA600F142C6 /* SMBaseRouter.swift in Sources */,
 				B78DB3321F288B940018D12C /* SMGoalCell.swift in Sources */,
 				B71A5C511F2F1C87001A0C66 /* SMGoalCellObjectFactory.swift in Sources */,
 				B70256741F28C8C600ECB6C8 /* SMGoalService.swift in Sources */,
@@ -1236,7 +1212,6 @@
 				B78DB3091F2889E60018D12C /* SMGoalCategoriesInteractor.swift in Sources */,
 				B78DB3101F2889E60018D12C /* SMGoalCategoriesRouterInput.swift in Sources */,
 				B7211BF71F274774000CFFEB /* SMBOGoal.swift in Sources */,
-				B7A0C4BD1F55A2DE00F142C6 /* SMBaseModule.swift in Sources */,
 				B78DB3051F2889E60018D12C /* SMCreateGoalModule.swift in Sources */,
 				B78DB30A1F2889E60018D12C /* SMGoalCategoriesInteractorInput.swift in Sources */,
 				B7211C051F274774000CFFEB /* SMUserNotificationDelegate.swift in Sources */,
@@ -1257,9 +1232,7 @@
 				B78DB3151F2889E60018D12C /* SMGoalsListInteractor.swift in Sources */,
 				B78DB3251F2889E70018D12C /* SMMatchGoalModuleOutput.swift in Sources */,
 				B78DB30B1F2889E60018D12C /* SMGoalCategoriesInteractorOutput.swift in Sources */,
-				B7A0C4C31F55BCC700F142C6 /* SMBaseInteractor.swift in Sources */,
 				B78DB3211F2889E70018D12C /* SMMatchGoalInteractor.swift in Sources */,
-				B7A0C4BF1F55B76000F142C6 /* SMBasePresenter.swift in Sources */,
 				B71A5C531F2F383E001A0C66 /* SMFloatingTextField.swift in Sources */,
 				B7211BF91F274774000CFFEB /* SMCategoryType.swift in Sources */,
 				B7211C041F274774000CFFEB /* SMModuleLocalPushes.swift in Sources */,
@@ -1286,7 +1259,6 @@
 				B78DB3061F2889E60018D12C /* SMCreateGoalViewController.swift in Sources */,
 				B7211BBE1F274774000CFFEB /* GradientArcWithClearColorView.swift in Sources */,
 				B7211C111F2748E1000CFFEB /* SMBaseViewController.swift in Sources */,
-				B78DB3001F2889E60018D12C /* SMCreateGoalModuleInput.swift in Sources */,
 				B7211BBF1F274774000CFFEB /* ProgressView.swift in Sources */,
 				B78DB31E1F2889E70018D12C /* SMGoalsListViewController.swift in Sources */,
 				B78DB3271F2889E70018D12C /* SMMatchGoalRouter.swift in Sources */,

@@ -10,15 +10,17 @@ import UIKit
 import CoreData
 import VRGSoftSwiftIOSKit
 
-class SMMainStore: SMStorage {
-    
+class SMMainStore: SMStorage
+{
     static let shared = SMMainStore()
     
-    override func persistentStoreName() -> String? {
+    override func persistentStoreName() -> String?
+    {
         return "DataModel.sqlite"
     }
     
-    func objectByID(objID: AnyObject, entity: SMBOModel.Type) -> NSManagedObject {
+    func objectByID(objID: AnyObject, entity: SMBOModel.Type) -> NSManagedObject
+    {
         var object: NSManagedObject? = nil
         
         self.sync {
@@ -35,7 +37,8 @@ class SMMainStore: SMStorage {
         return object!
     }
     
-    func allObjects(entityName: String) -> [NSManagedObject] {
+    func allObjects(entityName: String) -> [NSManagedObject]
+    {
         var result = [NSManagedObject]()
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
@@ -53,9 +56,9 @@ class SMMainStore: SMStorage {
         return result
     }
     
-    func defaultSortDescriptors() -> [NSSortDescriptor] {
+    func defaultSortDescriptors() -> [NSSortDescriptor]
+    {
         return [NSSortDescriptor.init(key: SMBOGoal.primaryKey, ascending: true)]
     }
-    
 }
 
