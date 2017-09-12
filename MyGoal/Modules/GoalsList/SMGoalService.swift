@@ -28,29 +28,23 @@ class SMGoalService: NSObject {
     
     static func deleteGoal(plainModel: SMGoal)
     {
-        let model = SMMainStore.shared.objectByID(objID: plainModel.identifier as AnyObject, entity: SMBOGoal.self)
-        
+        let model: SMBOGoal = SMBOGoal.objectByID(objID: plainModel.identifier as AnyObject)
         SMMainStore.shared.remove(object: model)
         SMMainStore.shared.save()
     }
     
     static func getAllGoals() -> [SMGoal]
     {
-        var result = [SMGoal]()
-        
-        if let models = SMMainStore.shared.allObjects(entityName: String(describing: SMBOGoal.self)) as? [SMBOGoal]
-        {
-            result = self.convertToPlain(models: models)
-        }
+        let result:[SMGoal] = self.convertToPlain(models: SMBOGoal.allObjects())
         
         return result
     }
     
     static func getGoalBy(id: AnyObject) -> SMGoal
     {
-        let model = SMMainStore.shared.objectByID(objID: id, entity: SMBOGoal.self)
-        
-        return self.convertToPlain(models: [model as! SMBOGoal]).first!
+        let model: SMBOGoal = SMBOGoal.objectByID(objID: id)
+
+        return self.convertToPlain(models: [model]).first!
     }
 
     static func convertToPlain(models: [SMBOGoal]) -> [SMGoal]

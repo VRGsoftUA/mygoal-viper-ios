@@ -13,7 +13,7 @@ class SMMatchGoalService: NSObject
 {
     static func updateGoal(plainModel: SMGoal)
     {
-        let model = SMMainStore.shared.objectByID(objID: plainModel.identifier as AnyObject, entity: SMBOGoal.self) as! SMBOGoal
+        let model: SMBOGoal = SMBOGoal.objectByID(objID: plainModel.identifier as AnyObject)
         model.progress = plainModel.progress as NSNumber
         model.notificationTime = plainModel.notificationTime
         model.lastUpdate = plainModel.lastUpdate
